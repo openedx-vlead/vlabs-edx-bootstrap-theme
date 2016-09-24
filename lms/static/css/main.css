@@ -2551,7 +2551,7 @@ body.view-in-course .window-wrap {
 }
 
 .section-bkg-wrapper{
-  background: url(../images/slider/bg1.jpg);
+  /*background: url(../images/slider/bg1.jpg);*/
   background-size: cover;
 }
 
