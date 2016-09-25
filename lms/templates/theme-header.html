@@ -38,7 +38,7 @@ site_status_msg = get_site_status_msg(course_id)
 </div>
 % endif
 </%block>
-  <div class="top-bar top-bar-header">
+  <!--div class="top-bar top-bar-header">
     <div class="row">
         <div class="col-md-6 col-xs-6">
             <div class="top-number"><p><i class="fa fa-phone-square"></i> +0123 456 70 90</p></div>
@@ -55,7 +55,8 @@ site_status_msg = get_site_status_msg(course_id)
            </div>
         </div>
     </div>
-</div><!--/.top-bar-->
+</div></.top-bar-->
+
   <header id="global-navigation" class="global ${"slim" if course else ""} navbar navbar-inverse" >
     <!-- This file is only for demonstration, and is horrendous! -->
     <nav aria-label="${_('Global')}">
@@ -95,7 +96,9 @@ site_status_msg = get_site_status_msg(course_id)
         <ol class="left nav-global authenticated header-btns">
             % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
               <li class="nav-global-01">
-                <a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>
+                <!--a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a-->
+                <a class="btn btn-info btn-sm pull-right color-black style="margin-top:20px;margin-left:9px" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>
+
               </li>
             % endif
             %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
