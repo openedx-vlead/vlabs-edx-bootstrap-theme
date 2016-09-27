@@ -407,7 +407,7 @@ input.search-form:hover {
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 140px;
+  height: 220px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -435,7 +435,7 @@ input.search-form:hover {
   background-color: #c52d2f;
   color: #fff;
   display: inline-block;
-  margin-top: -110px;
+  margin-top: -25px;
   height: 40px;
   line-height: 40px;
   width: 40px;
