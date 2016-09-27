@@ -101,9 +101,17 @@ a:focus {
 }
 
 .center h2{
-  font-size: 36px;
+  font-size: 1.8em;
   margin-top: 0;
   margin-bottom: 20px;
+color:#2c99ce;
+text-align:left;
+
+}
+
+.container-fluid{
+padding-right:15px;
+padding-left:15px;
 }
 
 .media>.pull-left{
@@ -367,6 +375,7 @@ input.search-form:hover {
 
 #main-slider {
   position: relative;
+height:300px;
 }
 
 .no-margin {
@@ -432,7 +441,7 @@ input.search-form:hover {
 #main-slider .next {
   position: absolute;
   top: 50%;
-  background-color: #c52d2f;
+
   color: #fff;
   display: inline-block;
   margin-top: -25px;
