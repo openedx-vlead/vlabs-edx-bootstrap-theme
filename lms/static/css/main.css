@@ -20,7 +20,8 @@ h5,
 h6 {
   font-weight: 600; 
   font-family: 'Open Sans', sans-serif;
-  color:#4e4e4e;
+ /* color:#4e4e4e;*/
+color:#2c99ce;
 }
 
 h1{
@@ -123,12 +124,12 @@ padding-left:15px;
 }
 
 body > section {
-  padding: 70px 0;
+  /*padding: 70px 0;*/
 }
 
 .center {
   text-align: center;
-  padding-bottom: 55px;
+  /*padding-bottom: 55px;*/
 }
 
 .scaleIn {
@@ -407,7 +408,7 @@ height:300px;
 
 
 #main-slider .carousel .item {
-  background-position: 50%;
+  /*background-position: 50%;*//
   background-repeat: no-repeat;
   background-size: cover;
   left: 0 !important;
@@ -416,7 +417,7 @@ height:300px;
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 220px;
+  height: 300px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -442,7 +443,8 @@ height:300px;
   position: absolute;
   top: 50%;
 
-  color: #fff;
+  /*color: #fff;*/
+  color:#080707;
   display: inline-block;
   margin-top: -25px;
   height: 40px;
@@ -597,6 +599,7 @@ height:300px;
 
 #recent-works{
     padding-bottom: 70px;
+height:220px;
 }
 
 .recent-work-wrap {
