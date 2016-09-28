@@ -2588,7 +2588,8 @@ body.view-in-course .window-wrap {
 }
 
 .login-register .form-wrapper form, .financial-assistance-wrapper .financial-assistance-form .form-wrapper form {
-    background: rgba(0,0,0,0.4);
+    /*background: rgba(0,0,0,0.4);*/
+background: white;
 }
 
 .login-register .form-field label, .financial-assistance-wrapper .financial-assistance-form .form-field label {
