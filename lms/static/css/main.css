@@ -488,6 +488,7 @@ input.search-form:hover {
 background-color:#5D94C3;
   margin: 0 15px 0 0;
   position: relative;
+border: 1px solid #c52d2f;
 }
 
 #main-slider .carousel-indicators li:after {
