@@ -2593,7 +2593,9 @@ background: white;
 }
 
 .login-register .form-field label, .financial-assistance-wrapper .financial-assistance-form .form-field label {
-    color: #FFF;
+    /*color: #FFF;*/
+    color: #000;
+    font-size:14px;
 }
 
 
