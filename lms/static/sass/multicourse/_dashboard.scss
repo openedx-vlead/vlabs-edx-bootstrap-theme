@@ -435,7 +435,8 @@
         @include float(left);
         width: flex-grid(4);
         padding: 0;
-        margin-top: ($baseline/2);
+        //margin-top: ($baseline/2);
+        
 
         [class*="info-"] {
           color: $gray-d1;
