@@ -2655,3 +2655,9 @@ header.global .primary > a{
     padding: 0.625rem 1.25rem;
     font-size: 2rem;
 }
+
+.poweredby{
+position:relative;
+width:50%;
+height:50%;
+}
