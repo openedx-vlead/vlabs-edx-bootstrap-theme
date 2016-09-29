@@ -2665,17 +2665,4 @@ height:50%;
 }
 
 
-.course-info header.course-profile {
-    background: red; !important
-    /* background-image: none; */
-    background-size: cover; !important
-    box-shadow: 0 1px 80px 0 rgba(0,0,0,0.5); !important
-    border-bottom: 1px solid #646464; !important
-    box-shadow: inset 0 1px 5px 0 rgba(0,0,0,0.1); !important
-    height: 241px; !important
-    /* margin-top: -69px; */
-    /* padding-top: 150px; */
-    overflow: hidden;!important
-    position: relative;!important
-    width: 100%;!important
-}
+
