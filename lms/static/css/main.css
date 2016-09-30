@@ -2664,5 +2664,39 @@ width:50%;
 height:50%;
 }
 
+.text-h2-lightblue-small
+{
+	color: #2C99CE;
+	font-size: 1.5em;
+}
+
+.text-h3-darkblue-bold
+{
+	color: #3e6389;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.text-normal-gray-small
+{
+	color: #888;
+	font-size: 16px;
+}
+.broad-labs-a:HOVER
+{
+	text-decoration: none !important;
+
+}
+.text-h3-darkblue-bold
+{
+	color: #3e6389;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.text-normal-gray-small
+{
+	color: #888;
+	font-size: 16px;
+}
+
 
 
