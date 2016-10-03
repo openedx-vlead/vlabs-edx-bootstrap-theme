@@ -238,6 +238,7 @@ body > section {
  padding: 0;
  margin: 0;
 margin-top:7px;
+margin-left:280px;
 }
 
 ul.social-share li {
@@ -631,6 +632,7 @@ background-color:#5D94C3;
 #recent-works{
     padding-bottom: 70px;
 height:165px;
+margin-top:43px;
 }
 
 .recent-work-wrap {
