@@ -8,6 +8,20 @@ from django.core.urlresolvers import reverse
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
+
+
+    <link rel="shortcut icon" href="http://virtual-labs.ac.in/images/favicon.ico">
+
+
+   
+
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="static/css/owl.carousel.css">
+	<link rel="stylesheet" href="static/css/owl.theme.css">
+
+	
+    <!-- Custom CSS -->
+
 <!--Keeping this slider for home usage -->`
 
     <section id="main-slider" class="no-margin">
@@ -902,3 +916,73 @@ from openedx.core.djangolib.markup import HTML, Text
   $(window).load(function() {$('#signup_action').trigger("click");});
 </script>
 % endif
+
+
+
+
+
+
+
+ <!-- Include js plugin -->
+	<script src="static/css/owl.carousel.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+		  var owl = $("#owl-demo");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		                       itemsCustom : [
+												[0, 1],
+												[570, 2],
+												[790, 3],
+												[1020, 4],
+												[1238, 5]
+		                                      ]
+
+		      /* autoPlay : 3000,
+		      stopOnHover : true */
+		  });
+
+		  //owl for partner institutions
+		  var owl = $("#owl-partner-institutions");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		      autoPlay : 3000,
+		      stopOnHover : true,
+		      itemsCustom : [
+                             [0, 3],
+                             [580, 4],
+                             [680, 5],
+                             [790, 6],
+                             [970,7],
+                             [1000, 8],
+                             [1200, 8],
+                             [1400, 8],
+                             [1600, 8]
+                           ]
+		  });
+
+
+
+	 //owl for aboutus
+	  var owl = $("#owl-aboutus");
+	  owl.owlCarousel({
+	      navigation: true,
+	      singleItem:true
+	  });
+
+
+
+	});
+
+	</script>
+
