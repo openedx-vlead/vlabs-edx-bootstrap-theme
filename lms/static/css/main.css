@@ -1003,7 +1003,10 @@ a.accordion-toggle  i{
 
 #partner h2, 
 #partner h3 {
-  color: #fff;
+  /*color: #fff;*/
+color:#2C99CE;
+text-align:left;
+
 }
 
 .partners ul {
