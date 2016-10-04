@@ -4061,6 +4061,7 @@ font-size: 30px;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+margin-left:427px;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
 	-webkit-transition: height 500ms ease-in-out;
