@@ -4058,7 +4058,7 @@ font-size: 30px;
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
 .owl-carousel .owl-wrapper-outer{
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 	width: 100%;
 margin-left:427px;
