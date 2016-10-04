@@ -256,13 +256,12 @@ ul.social-share li a {
  border-radius: 2px;*/
   line-height: 25px;
   text-align: center;
- 
     background: gray;
-    width: 36px;
-    height: 50px;
-    line-height: 64px;
+    width: 37px;
+    height: 37px;
+    line-height: 42px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 ul.social-share li a:hover {
@@ -3379,7 +3378,7 @@ margin-top:120px;
 	height:232px;
 }
 .border-right-green-dotted a{
-	padding-left: 10px;
+	/*padding-left: 10px;*/
 	display: block;
 	margin-bottom: 10px;
 }
@@ -3392,6 +3391,7 @@ a:focus
 {
 	min-height: 190px !important;
 }
+
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
@@ -3408,6 +3408,11 @@ a:focus
 }
 
 .text-a-lightgreen:HOVER
+{
+	color: #72AB44 !important;
+}
+/*over write visted link color*/
+.text-a-lightgreen:visted
 {
 	color: #72AB44 !important;
 }
