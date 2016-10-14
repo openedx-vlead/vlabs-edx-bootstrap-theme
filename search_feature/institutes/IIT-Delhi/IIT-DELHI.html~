@@ -317,7 +317,7 @@ step-by-step' instructions available in each lab to assist the users.</li>
 							
 							
 							
-						               <h2 class="text-h2-lightblue" style="
+						    <!--           <h2 class="text-h2-lightblue" style="
 						               margin-bottom:
 						               20px;
 						               margin-top:
@@ -330,12 +330,12 @@ step-by-step' instructions available in each lab to assist the users.</li>
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
 									<!-- <p class="text-normal-gray-small">IIT KHARAGPUR</p> -->
+							<!--	</div>
+								<div class="col-md-2 lab-list-row-col-2">
+								<!--	<a href="#/" class="nounderline">--> <!--<img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;"> LAB
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
-								<!--	<a href="#/" class="nounderline">--> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;"> LAB
-								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-								<!--	<a href="#" class="nounderline">--> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;"> LECTURE
+								<!--	<a href="#" class="nounderline">--> <!--<img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;"> LECTURE
 								</div>
 
 							</div>
@@ -343,30 +343,30 @@ step-by-step' instructions available in each lab to assist the users.</li>
 								<div class="col-md-5">
 									<p class="text-h3-darkblue">FPGA &amp; Digital Design Lab</p>
 									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p	> -->
-								</div>
+								<!--</div>
 								<div class="col-md-2 lab-list-row-col-2">
 									<!-- <p class="text-normal-gray-small">IIT KHARAGPUR</p> -->
+								<!--</div>
+								<div class="col-md-2 lab-list-row-col-2">
+								<!--	<a href="#/" class="nounderline">--> <!--<img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;"> LAB
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
-								<!--	<a href="#/" class="nounderline">--> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;"> LAB
-								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-								<!--	<a href="#" class="nounderline">--> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;"> LECTURE
+								<!--	<a href="#" class="nounderline">--><!-- <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;"> LECTURE
 								</div>
 							</div>
 							<div style="margin-top: 20px; " class="lab-list-row-div">
 								<div class="col-md-5">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://118.102.191.41/?link=T001" class="sidebar-a">Virtual MEMS Lab</a></p>
 									<!-- <p class="text-normal-gray-smallest"> A brief about the lab appears here, should not be exceed more than 100 characters</p	> -->
-								</div>
+								<!--</div>
 								<div class="col-md-2 lab-list-row-col-2">
 									<!-- <p class="text-normal-gray-small">IIT KHARAGPUR</p> -->
+								<!--</div>
+								<div class="col-md-2 lab-list-row-col-2">
+								<!--	<a href="http://118.102.191.41/?link=T001" class="nounderline"> --><!--<img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;"> LAB
 								</div>
 								<div class="col-md-2 lab-list-row-col-2">
-								<!--	<a href="http://118.102.191.41/?link=T001" class="nounderline"> --><img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;"> LAB
-								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-								<!--	<a href="#" class="nounderline">--> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;"> LECTURE
+								<!--	<a href="#" class="nounderline">--><!-- <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;"> LECTURE
 								</div>
 							</div>
                                                         
