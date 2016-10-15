@@ -8,11 +8,20 @@ from django.core.urlresolvers import reverse
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
-<!--Keeping this slider for home usage -->
+
+
+
+<!--Keeping this slider for home usage -->`
 
     <section id="main-slider" class="no-margin">
         <div class="carousel slide">
-           
+           <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+                <li data-target="#main-slider" data-slide-to="3"></li>
+                <li data-target="#main-slider" data-slide-to="4"></li>
+            </ol>
             <div class="carousel-inner">
 
                 <div class="item active" style="background-image: url(${static.url("images/slider/bg1.jpg")}">
@@ -28,7 +37,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
                             <div class="col-sm-6 hidden-xs animation animated-item-4">
                                 <div class="slider-img">
-                                    <!--img src="${static.url("images/slider/img1.png")}" class="img-responsive"-->
+                                    <!--img src="${static.url("images/slider/bg1.png")}" class="img-responsive"-->
                                 </div>
                             </div>
 
@@ -49,7 +58,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
                             <div class="col-sm-6 hidden-xs animation animated-item-4">
                                 <div class="slider-img">
-                                    <!--img src="${static.url("images/slider/img2.png")}" class="img-responsive"-->
+                                   <!--img src="${static.url("images/slider/bg2.png")}" class="img-responsive"-->
                                 </div>
                             </div>
 
@@ -69,7 +78,7 @@ from openedx.core.djangolib.markup import HTML, Text
                             </div>
                             <div class="col-sm-6 hidden-xs animation animated-item-4">
                                 <div class="slider-img">
-                                    <!--img src="${static.url("images/slider/img3.png")}" class="img-responsive"-->
+                                    <!--img src="${static.url("images/slider/bg3.png")}" class="img-responsive"-->
                                 </div>
                             </div>
                         </div>
@@ -77,7 +86,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 </div><!--/.item-->
 
 
-                <div class="item active" style="background-image: url(${static.url("images/slider/bg4.jpg")}">
+                <div class="item" style="background-image: url(${static.url("images/slider/bg4.jpg")}">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -90,7 +99,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
                             <div class="col-sm-6 hidden-xs animation animated-item-4">
                                 <div class="slider-img">
-                                    <!--img src="${static.url("images/slider/img1.png")}" class="img-responsive"-->
+                                    <!--img src="${static.url("images/slider/bg4.png")}" class="img-responsive"-->
                                 </div>
                             </div>
 
@@ -98,7 +107,7 @@ from openedx.core.djangolib.markup import HTML, Text
                     </div>
                 </div><!--/.item-->
                   
-                <div class="item active" style="background-image: url(${static.url("images/slider/bg5.jpg")}">
+                <div class="item" style="background-image: url(${static.url("images/slider/bg5.jpg")}">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -111,7 +120,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
                             <div class="col-sm-6 hidden-xs animation animated-item-4">
                                 <div class="slider-img">
-                                    <!--img src="${static.url("images/slider/img1.png")}" class="img-responsive"-->
+                                    <!--img src="${static.url("images/slider/bg5.png")}" class="img-responsive"-->
                                 </div>
                             </div>
 
@@ -121,23 +130,212 @@ from openedx.core.djangolib.markup import HTML, Text
             </div><!--/.carousel-inner-->
         </div><!--/.carousel-->
         <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-            <i class="fa fa-chevron-left"></i>
+            <i class="fa fa-chevron-left"  style="color:black"></i>
         </a>
         <a class="next hidden-xs" href="#main-slider" data-slide="next">
-            <i class="fa fa-chevron-right"></i>
+            <i class="fa fa-chevron-right" style="color:black"></i>
         </a>
     </section><!--/#main-slider-->
+
+<!-- Analytics section here-->
+ <section id="feature">
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2> </h2>
+                <!--p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p-->
+            </div>
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <!--<i class="fa fa-area-chart"></i>-->
+                            <h1 class="text-h3-darkblue-bold" style="text-align: center;"> 70<sup>+</sup> Labs </h1>
+                            <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
+                        </div>
+                    </div>
+
+                <div class="features">
+                    <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                           <!-- <i class="fa fa-area-chart"></i>-->
+                            <h1 class="text-h3-darkblue-bold" style="text-align: center;"> 700<sup>+</sup>  Experiments</h1>
+                            <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
+                        </div>
+                    </div>
+
+
+
+                  <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                           <!-- <i class="fa fa-area-chart"></i>-->
+                            <h1 class="text-h3-darkblue-bold" style="text-align: center;">27 Registered students </h1>
+                            <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
+                        </div>
+                    </div>
+
+                   <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <!--<i class="fa fa-area-chart"></i>-->
+                            <h1 class="text-h3-darkblue-bold" style="text-align: center;">Server Analytics - 570</h1>
+                            <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
+                       </div>
+                    </div>                
+		 <div class="col-md-2 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <!--<i class="fa fa-area-chart"></i>-->
+                            <h1 class="text-h3-darkblue-bold" style="text-align: center;">Workshop Usage - 570</h1>
+                            <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
+                       </div>
+                    </div> 
+
+
+
+                </div>
+            </div>
+       </div>
+    </section>
+
+
 
 
 <!--This is a section for Disciplines -->
 
-    <section id="feature" >
+<div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 20px; ">Disciplines and Domains</h2>
+
+					<div class="row">
+
+						<div class="col-md-2-5 border-bottom-img" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommmunication/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-withbg">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_1.png"></div>
+										<h3 class="text-h3-darkblue-bold">Electronics &amp; Communications</h3>
+										<p class="text-normal-gray-small">04 Labs | 04 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5 border-bottom-img" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/ChemicalSciences/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-withbg">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_2.png"></div>
+										<h3 class="text-h3-darkblue-bold">Computer Science &amp; Engineering</h3>
+										<p class="text-normal-gray-small">20 Labs | 18 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5 border-bottom-img" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/ElectricalEngineering/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-withbg">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_3.png"></div>
+										<h3 class="text-h3-darkblue-bold">Electrical Engineering </h3>
+										<p class="text-normal-gray-small">08 Labs | 08 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5 border-bottom-img" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/MechanicalEngineering/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-withbg">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_4.png"></div>
+							<h3 class="text-h3-darkblue-bold">Mechanical Engineering</h3>
+						<p class="text-normal-gray-small">07 Labs | 05 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5 border-bottom-img" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/ChemicalEngineering/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-withbg">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_5.png"></div>
+											<h3 class="text-h3-darkblue-bold">Chemical Engineering</h3>
+											<p class="text-normal-gray-small">02 Labs | 02 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</div>
+					<div class="row" style="background: url('images/bottom-line-n.png');  background-repeat: repeat-x; background-position: left bottom; ">
+
+
+						<div class="col-md-2-5" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/BiotechnologyAndBiomedicalEngineering/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-l">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_6.png"></div>
+										<h3 class="text-h3-darkblue-bold">Biotechnology &amp; Biochemical Engineering</h3>
+										<p class="text-normal-gray-small">06 Labs | 01 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/CivilEngineering/index.html " class="broad-labs-a">
+								<div class="col-md-2-5-1-l">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_7.png"></div>
+										<h3 class="text-h3-darkblue-bold">Civil Engineering</h3>
+										<p class="text-normal-gray-small">07 Labs | 07 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/PhysicalSciences/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-l">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_8.png"></div>
+										<h3 class="text-h3-darkblue-bold">Physical Sciences</h3>
+										<p class="text-normal-gray-small">01 Labs | 0 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+							<a href="http://open-edx.vlabs.ac.in:5959/search_feature/disciplines/ChemicalSciences/index.html" class="broad-labs-a">
+								<div class="col-md-2-5-1-l">
+									<div class="col-md-2-5-2">
+										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_9.png"></div>
+										<h3 class="text-h3-darkblue-bold">Chemical Sciences</h3>
+										<p class="text-normal-gray-small">08 Labs | 04 Lectures</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-2-5 border-bottom-img broad-labs-empty-div" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
+								<div class="col-md-2-5-1-l">
+									<div class="col-md-2-5-2">
+									</div>
+								</div>
+						</div>
+
+
+					</div>
+
+			</div>
+
+<!-- Disciplines and Domains existed template code here
+ <section id="feature" >
         <div class="container">
            <div class="center wow fadeInDown">
                 <h2>Disciplines and Domains</h2>
                 <!--p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p-->
-            </div>
-
+         <!--   </div>
             <div class="row">
                 <div class="features">
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -145,92 +343,167 @@ from openedx.core.djangolib.markup import HTML, Text
                             <i class="fa fa-phone"></i>
                             <h2>Electronics & Communications</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                      <!--  </div>
                     </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                  <!--  <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-desktop"></i>
                             <h2>Computer Science & Engineering </h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                        <!--</div>
                     </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                   <!-- <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-plug"></i>
                             <h2>Electrical Engineering</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                      <!--  </div>
                     </div><!--/.col-md-4-->
                 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                   <!-- <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-cogs"></i>
                             <h2>Mechanical Engineering</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                      <!--  </div>
                     </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <!--          <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-flask"></i>
                             <h2>Chemical Engineering</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+             <!--           </div>
                     </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <!--    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-leaf"></i>
                             <h2>Biotechnology & Biomedical Engineering</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                   <!--     </div>
                     </div><!--/.col-md-4-->
 
-                        <div class="feature-wrap">
+                   <!--     <div class="feature-wrap">
                             <i class="fa fa-university"></i>
                             <h2>Civil Engineering</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                <!--        </div>
                     </div><!--/.col-md-4-->
 
 
-                        <div class="feature-wrap">
+                <!--        <div class="feature-wrap">
                             <i class="fa fa-balance-scale"></i>
                             <h2>Physical Sciences</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                  <!--      </div>
                     </div><!--/.col-md-4-->
 
-                        <div class="feature-wrap">
+                  <!--      <div class="feature-wrap">
                             <i class="fa fa-flask"></i>
                             <h2>Chemical Sciences</h2>
                             <!--h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3-->
-                        </div>
+                   <!--     </div>
                     </div><!--/.col-md-4-->
 
 
-                </div><!--/.services-->
-            </div><!--/.row-->    
-        </div><!--/.container-->
-    </section><!--/#feature-->
+             <!--   </div><!--/.services-->
+         <!--   </div><!--/.row-->    
+     <!--   </div><!--/.container-->
+    <!--</section><!--/#feature-->
 
 <!--Discipline section end here -->
 
 <!--Partner Institutes section started here -->
 
-    <section id="recent-works">
+
+				<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;" id="partner">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-h2-lightblue" style="margin-bottom: 10px; margin-top: 20px;">Partner Institutes</h2>
+							<div id="owl-partner-institutions" class="owl-carousel owl-theme">
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIT-Delhi/" class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/IIT_Delhi.png" />
+									<div class="text-normal-gray-small">IIT Delhi</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIT-Bombay/"  class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/IIT_bombay.png" />
+									<div class="text-normal-gray-small">IIT BOMBAY</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIT-Kanpur/"  class="nounderline"> <img src="static/edx-bootstrap-theme/images/partner_institutes/IIT_kanpur.png" />
+									<div class="text-normal-gray-small">IIT Kanpur</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIT-Kharagpur/"  class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/IIT_kharagpur.png" />
+									<div class="text-normal-gray-small">IIT Kharagpur</div> </a>
+								</div>
+
+								<!--<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIT-Madras/"  class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/IIT_madras.png" />
+									<div class="text-normal-gray-small">IIT Madras</div> </a>
+								</div>-->
+
+								<div class="item" style="text-align: center;">
+								<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIT-Roorkee/"  class="nounderline">	<img src="static/edx-bootstrap-theme/images/partner_institutes/IIT_roorkee.png" />
+									<div class="text-normal-gray-small">IIT Roorkee</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIT-Guwahati/"  class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/IIT_guwahati.png" />
+									<div class="text-normal-gray-small">IIT Guwahati</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/IIIT-Hyderabad/"  class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/iiit_Hyd.png" />
+									<div class="text-normal-gray-small">IIIT Hyderabad</div> </a>
+								</div>
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/AmritaUniversity/" class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/amrutauniversity.png" />
+									<div class="text-normal-gray-small">Amrita University</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/DayalbaghUniversity/"  class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/dayalbagh.png" />
+									<div class="text-normal-gray-small">Dayalbagh</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959/search_feature/institutes/NIT-Karnataka/"  class="nounderline"> <img src="static/edx-bootstrap-theme/images/partner_institutes/NIIT_karnataka.png" />
+									<div class="text-normal-gray-small">NIT Karnataka</div> </a>
+								</div>
+
+								<div class="item" style="text-align: center;">
+									<a href="http://open-edx.vlabs.ac.in:5959//search_feature/institutes/COE-Pune/"  class="nounderline"><img src="static/edx-bootstrap-theme/images/partner_institutes/COEP.png" />
+									<div class="text-normal-gray-small">COE Pune</div> </a>
+								</div>
+
+
+
+							</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+ <!--<section id="recent-works">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>Partner Institutes</h2>
+                <h2 style="margin-left:-40px";>Partner Institutes</h2>
                 <!--p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p-->
-            </div>
-
+            <!--</div>
 <!--A Divsion row for Amrita University -->
-        <!--<marquee>
+
+      <!--  <div>
                         <img src="${static.url("images/partner_institutes/amrutauniversity.png")}" alt="">
-                        <img src="${static.url("images/partner_institutes/IIT_Delhi.png")}" alt="">
+			<img src="${static.url("images/partner_institutes/IIT_Delhi.png")}" alt="">
                         <img src="${static.url("images/partner_institutes/IIT_guwahati.png")}" alt="">
                         <img src="${static.url("images/partner_institutes/IIT_bombay.png")}" alt="">
                         <img src="${static.url("images/partner_institutes/IIT_kanpur.png")}" alt="">
@@ -240,56 +513,15 @@ from openedx.core.djangolib.markup import HTML, Text
                         <img src="${static.url("images/partner_institutes/IIIT_Hyd.png")}" alt="">
                         <img src="${static.url("images/partner_institutes/COEP.png")}" alt="">
                         <img src="${static.url("images/partner_institutes/Dayalbagh.png")}" alt="">
-        </marquee>-->
-
-<div class="container-fluid" style="margin-left: 35px; margin-right: 35px;" id="partner">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="text-h2-lightblue" style="margin-bottom: 10px; margin-top: 20px;">Partner Institutes</h2>
-							<div style="opacity: 1; display: block;" id="owl-partner-institutions" class="owl-carousel owl-theme">
-								<div class="owl-wrapper-outer"><div style="width: 2784px; left: 0px; display: block; transition: all 800ms ease 0s; transform: translate3d(-232px, 0px, 0px);" class="owl-wrapper"><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="iitdelhi-labs.html" class="nounderline"><img src="images/uni-logos/IIT_Delhi.png">
-									<div class="text-normal-gray-small">IIT Delhi</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="iitbombay-labs.html" class="nounderline"><img src="images/uni-logos/IIT_bombay.png">
-									<div class="text-normal-gray-small">IIT BOMBAY</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="iitkanpur-labs.html" class="nounderline"> <img src="images/uni-logos/IIT_kanpur.png">
-									<div class="text-normal-gray-small">IIT Kanpur</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="iitkharagpur-labs.html" class="nounderline"><img src="images/uni-logos/IIT_kharagpur.png">
-									<div class="text-normal-gray-small">IIT Kharagpur</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="iitmadras-labs.html" class="nounderline"><img src="images/uni-logos/IIT_madras.png">
-									<div class="text-normal-gray-small">IIT Madras</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-								<a href="iitroorkee-labs.html" class="nounderline">	<img src="images/uni-logos/IIT_roorkee.png">
-									<div class="text-normal-gray-small">IIT Roorkee</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="iitguwahati-labs.html" class="nounderline"><img src="images/uni-logos/IIT_guwahati.png">
-									<div class="text-normal-gray-small">IIT Guwahati</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="iiithyderabad-labs.html" class="nounderline"><img src="images/uni-logos/iiit_Hyd.png">
-									<div class="text-normal-gray-small">IIIT Hyderabad</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="amrita-labs.html" class="nounderline"><img src="images/uni-logos/amrutauniversity.png">
-									<div class="text-normal-gray-small">Amrita University</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="dayalbagh-labs.html" class="nounderline"><img src="images/uni-logos/dayalbagh.png">
-									<div class="text-normal-gray-small">Dayalbagh</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="nit-labs.html" class="nounderline"> <img src="images/uni-logos/NIIT_karnataka.png">
-									<div class="text-normal-gray-small">NIT Karnataka</div> </a>
-								</div></div><div style="width: 116px;" class="owl-item"><div class="item" style="text-align: center;">
-									<a href="pune-labs.html" class="nounderline"><img src="images/uni-logos/COEP.png">
-									<div class="text-normal-gray-small">COE Pune</div> </a>
-								</div></div></div></div>
+        </div-->
 
 
 
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#recent-works-->
+
+
+           <!-- </div><!--/.row-->
+   <!--     </div><!--/.container-->
+    <!--</section><!--/#recent-works-->
 
 
 <!-- Comment these below sections for now -->
@@ -300,9 +532,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 <h2>Our Service</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
-
             <div class="row">
-
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
                         <div class="pull-left">
@@ -314,7 +544,6 @@ from openedx.core.djangolib.markup import HTML, Text
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
                         <div class="pull-left">
@@ -326,7 +555,6 @@ from openedx.core.djangolib.markup import HTML, Text
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
                         <div class="pull-left">
@@ -351,7 +579,6 @@ from openedx.core.djangolib.markup import HTML, Text
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
                         <div class="pull-left">
@@ -363,7 +590,6 @@ from openedx.core.djangolib.markup import HTML, Text
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
                         <div class="pull-left">
@@ -388,17 +614,14 @@ from openedx.core.djangolib.markup import HTML, Text
                     <div class="skill">
                         <h2>Our Skills</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
                         <div class="progress-wrap">
                             <h3>Graphic Design</h3>
                             <div class="progress">
                               <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
                                 <span class="bar-width">85%</span>
                               </div>
-
                             </div>
                         </div>
-
                         <div class="progress-wrap">
                             <h3>HTML</h3>
                             <div class="progress">
@@ -407,7 +630,6 @@ from openedx.core.djangolib.markup import HTML, Text
                               </div>
                             </div>
                         </div>
-
                         <div class="progress-wrap">
                             <h3>CSS</h3>
                             <div class="progress">
@@ -416,7 +638,6 @@ from openedx.core.djangolib.markup import HTML, Text
                               </div>
                             </div>
                         </div>
-
                         <div class="progress-wrap">
                             <h3>Wordpress</h3>
                             <div class="progress">
@@ -426,9 +647,7 @@ from openedx.core.djangolib.markup import HTML, Text
                             </div>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="col-sm-6 wow fadeInDown">
                     <div class="accordion">
                         <h2>Why People like us?</h2>
@@ -442,7 +661,6 @@ from openedx.core.djangolib.markup import HTML, Text
                                 </a>
                               </h3>
                             </div>
-
                             <div id="collapseOne1" class="panel-collapse collapse in">
                               <div class="panel-body">
                                   <div class="media accordion-inner">
@@ -457,7 +675,6 @@ from openedx.core.djangolib.markup import HTML, Text
                               </div>
                             </div>
                           </div>
-
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
@@ -473,7 +690,6 @@ from openedx.core.djangolib.markup import HTML, Text
                               </div>
                             </div>
                           </div>
-
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
@@ -489,7 +705,6 @@ from openedx.core.djangolib.markup import HTML, Text
                               </div>
                             </div>
                           </div>
-
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
@@ -508,7 +723,6 @@ from openedx.core.djangolib.markup import HTML, Text
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section-->
@@ -530,7 +744,6 @@ from openedx.core.djangolib.markup import HTML, Text
                                     <li class=""><a href="#tab5" data-toggle="tab" class="tehnical">What We Do?</a></li>
                                 </ul>
                             </div>
-
                             <div class="parrent media-body">
                                 <div class="tab-content">
                                     <div class="tab-pane fade" id="tab1">
@@ -544,7 +757,6 @@ from openedx.core.djangolib.markup import HTML, Text
                                             </div>
                                         </div>
                                     </div>
-
                                      <div class="tab-pane fade active in" id="tab2">
                                         <div class="media">
                                            <div class="pull-left">
@@ -557,7 +769,6 @@ from openedx.core.djangolib.markup import HTML, Text
                                             </div>
                                         </div>
                                      </div>
-
                                      <div class="tab-pane fade" id="tab3">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
                                      </div>
@@ -565,7 +776,6 @@ from openedx.core.djangolib.markup import HTML, Text
                                      <div class="tab-pane fade" id="tab4">
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
                                      </div>
-
                                      <div class="tab-pane fade" id="tab5">
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,</p>
                                      </div>
@@ -574,7 +784,6 @@ from openedx.core.djangolib.markup import HTML, Text
                         </div> 
                     </div>
                 </div>
-
                 <div class="col-xs-12 col-sm-4 wow fadeInDown">
                     <div class="testimonial">
                         <h2>Testimonials</h2>
@@ -587,7 +796,6 @@ from openedx.core.djangolib.markup import HTML, Text
                                 <span><strong>-John Doe/</strong> Director of corlate.com</span>
                             </div>
                          </div>
-
                          <div class="media testimonial-inner">
                             <div class="pull-left">
                                 <img class="img-responsive img-circle" src="${static.url("images/testimonials1.png")}">
@@ -597,10 +805,8 @@ from openedx.core.djangolib.markup import HTML, Text
                                 <span><strong>-John Doe/</strong> Director of corlate.com</span>
                             </div>
                          </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </section-->
@@ -613,7 +819,6 @@ from openedx.core.djangolib.markup import HTML, Text
                 <h2>Our Partners</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>    
-
             <div class="partners">
                 <ul>
                     <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="${static.url("images/partners/partner1.png")}"></a></li>
@@ -666,7 +871,6 @@ from openedx.core.djangolib.markup import HTML, Text
                     </ul>
                 </div>    
             </div>
-
             <div class="col-md-3 col-sm-6">
                 <div class="widget">
                     <h3>Support</h3>
@@ -681,7 +885,6 @@ from openedx.core.djangolib.markup import HTML, Text
                     </ul>
                 </div>    
             </div>
-
             <div class="col-md-3 col-sm-6">
                 <div class="widget">
                     <h3>Developers</h3>
@@ -696,7 +899,6 @@ from openedx.core.djangolib.markup import HTML, Text
                     </ul>
                 </div>    
             </div>
-
             <div class="col-md-3 col-sm-6">
                 <div class="widget">
                     <h3>Our Partners</h3>
@@ -732,3 +934,72 @@ from openedx.core.djangolib.markup import HTML, Text
   $(window).load(function() {$('#signup_action').trigger("click");});
 </script>
 % endif
+
+
+
+
+
+
+
+<!-- jQuery -->
+    <script src="static/css/jquery1.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/javascripts/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+    <script src="static/js/custom.js"></script>
+
+    <!-- Include js plugin -->
+	<script src="static/js/owl.carousel.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		  var owl = $("#owl-demo");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='static/edx-bootstrap-theme/images/left-arrow.png'>",
+		                       "<img src='static/edx-bootstrap-theme/images/right-arrow.png'>"
+		                       ],
+		                       itemsCustom : [
+												[0, 1],
+												[570, 2],
+												[790, 3],
+												[1020, 4],
+												[1238, 5]
+		                                      ]
+		      /* autoPlay : 3000,
+		      stopOnHover : true */
+		  });
+		  //owl for partner institutions
+		  var owl = $("#owl-partner-institutions");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='static/edx-bootstrap-theme/images/left-arrow.png'>",
+		                       "<img src='static/edx-bootstrap-theme/images/right-arrow.png'>"
+		                       ],
+		      autoPlay : 3000,
+		      stopOnHover : true,
+		      itemsCustom : [
+                             [0, 3],
+                             [580, 4],
+                             [680, 5],
+                             [790, 6],
+                             [970,7],
+                             [1000, 8],
+                             [1200, 8],
+                             [1400, 8],
+                             [1600, 8]
+                           ]
+		  });
+	 //owl for aboutus
+	  var owl = $("#owl-aboutus");
+	  owl.owlCarousel({
+	      navigation: true,
+	      singleItem:true
+	  });
+	});
+	</script>
+
