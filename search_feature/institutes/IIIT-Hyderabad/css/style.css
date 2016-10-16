@@ -709,10 +709,10 @@ a:focus
 }
 .poweredby{
     position: relative;
-    width: 80%;
-    height: 100%;
-    top: 50px;
-margin-left:2em;
+width: 40%;
+height: 100%;
+top: 50px;
+margin-left: 7em;
     /*left: 22px;*/
 }
 
