@@ -768,6 +768,9 @@ margin-left:2em;
 	color: #888;
 	font-size: 16px;
 }
+.text-normal-gray-small:hover{
+color:green;
+}
 
 .text-normal-gray-big
 {
