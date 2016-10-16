@@ -3440,6 +3440,13 @@ a:focus
 	font-weight: bold;
 }
 
+.text-h3-darkblack-bold
+{
+	color: #000;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
 .text-h3-darkblue
 {
 	color: #3e6389;
