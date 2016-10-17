@@ -36,4 +36,4 @@ openedx.
     paver update_assets lms --setting=aws
    #+END_SRC
   + Once done, restart services using /edx/bin/supervisorctl/ restart all 
-x
+
