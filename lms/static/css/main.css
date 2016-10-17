@@ -595,7 +595,7 @@ background-color:#5D94C3;
 .feature-wrap {
   margin-bottom: 35px;
   overflow: hidden;
-height:6em;
+height:5em;
 }
 
 .feature-wrap h2{
@@ -3225,7 +3225,7 @@ margin-top:120px;
 
 	.banner-text-big
 	{
-		font-size: 1.6em !important;
+		font-size: 1.7em !important;
 	}
 
 }
@@ -3269,7 +3269,15 @@ margin-top:120px;
 }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/*@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}*/
+
+@media only screen and (min-width: 1920px)  {
+.item{
+ height:517px;
+}
+
 
 }
 
@@ -3652,7 +3660,7 @@ font-size: 30px;
 
 .banner-text-big
 {
-	font-size: 1.7em;
+	font-size: 2.7em;
 }
 
 .baneer-text-sub-div
