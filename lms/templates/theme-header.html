@@ -64,7 +64,7 @@ site_status_msg = get_site_status_msg(course_id)
       <h1 class="logo pull-left" style="margin-top: 10px;">
         <a href="${marketing_link('ROOT')}">
           <%block name="navigation_logo">
-              <img src="${static.url("images/logo.png")}"  style="width:93px" alt=""/>
+              <img src="${static.url("images/logo.png")}"  style="width:4em" alt=""/>
           </%block>
         </a>
       </h1>
@@ -102,11 +102,10 @@ site_status_msg = get_site_status_msg(course_id)
         <ol class="left nav-global authenticated header-btns">
             % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
               <li class="nav-global-01">
-                <a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Labs')}</a>
+                <a class="btn btn-info btn-sm pull-right color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Labs')}</a>
 
-<!-- **find search button for center align **               
-<a class="btn btn-info btn-sm pull-right color-black" style='margin-top:20px;margin-left:9px' href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>-->
-
+<!--**find search button for center alig ->> 
+<!--a class="btn btn-info btn-sm pull-right color-black" style='margin-top:20px;margin-left:7em' href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a-->
               </li>
             % endif
             %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
