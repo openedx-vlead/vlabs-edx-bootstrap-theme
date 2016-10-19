@@ -1017,7 +1017,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
 
 //workshop use analytics code statrt from here
-var jqxhr = $.getJSON('https://outreach-map.base4.vlabs.ac.in/get_outreach_analytics', function(data) {
+var jqxhr = $.getJSON('http://outreach-map.base4.vlabs.ac.in/get_outreach_analytics', function(data) {
   var usage = data["usage"];
   $("#usage").html(usage);
   })
