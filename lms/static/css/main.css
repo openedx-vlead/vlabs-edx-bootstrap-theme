@@ -439,7 +439,7 @@ input.search-form:hover {
 
 
 #main-slider .carousel .item {
-  /*background-position: 50%;*//
+  /*background-position: 50%;*/
   background-repeat: no-repeat;
   background-size: cover;
   left: 0 !important;
@@ -448,7 +448,7 @@ input.search-form:hover {
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 370px;
+  height: 517px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -2685,7 +2685,7 @@ header.global .primary > a{
     position: relative;
     width: 50%;
     height: 100%;
-    top: 50px;
+    top: 10px;
     /*left: 22px;*/
 }
 .fa{
@@ -3275,10 +3275,25 @@ margin-top:120px;
 
 @media only screen and (min-width: 1920px)  {
 .item{
- /*height:517px;/
+ /*height:517px;*/
 }
 
-
+#main-slider .carousel .item {
+    /*background-position: 50%;*/
+     background-repeat: no-repeat;
+    background-size: cover;
+    left: 0 !important;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block !important;
+    height: 533px;
+    -webkit-transition: opacity ease-in-out 500ms;
+    -moz-transition: opacity ease-in-out 500ms;
+    -o-transition: opacity ease-in-out 500ms;
+    transition: opacity ease-in-out 500ms;
+}
 }
 
 
