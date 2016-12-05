@@ -37,3 +37,24 @@ openedx.
    #+END_SRC
   + Once done, restart services using /edx/bin/supervisorctl/ restart all 
 
+
+* Enable Search categorization in Open edX
+  All Labs available must be categorized as that in vlabs.ac.in on the basis of 
+  Disciplines and Institutes. To acheive this, custom html pages are served
+  from VLABS Open edX server. To let it work, follow the steps given -
+  + Clone repository https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme
+    #+BEGIN_SRC command
+    git clone https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme edx-bootstrap-theme
+    #+END_SRC
+  + Copy folder search_feature to /var/www/html/
+    #+BEGIN_SRC command
+    sudo cp -r search_feature /var/www/html
+    #+END_SRC
+  + Copy analytics folder to /var/www/html
+    #+BEGIN_SRC command
+    sudo cp -r analytics /var/www/html
+    #+END_SRC
+  + Copy faq folder to /var/www/html
+    #+BEGIN_SRC command
+    sudo cp -r faq /var/www/html
+    #+END_SRC
