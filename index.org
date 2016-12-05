@@ -9,6 +9,7 @@
 This document briefly explaines the process of customizing theme in
 openedx.
 
+
 * Comprehensive theme on dogwood3 
   To apply comprehensive theme on dogwood follow the steps -
   + Login to edX server 
@@ -46,15 +47,15 @@ openedx.
     #+BEGIN_SRC command
     git clone https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme edx-bootstrap-theme
     #+END_SRC
-  + Copy folder search_feature to /var/www/html/
+  + Copy folder search_feature to /usr/share/nginx/html/
     #+BEGIN_SRC command
     sudo cp -r search_feature /var/www/html
     #+END_SRC
-  + Copy analytics folder to /var/www/html
+  + Copy analytics folder to /usr/share/nginx/html
     #+BEGIN_SRC command
     sudo cp -r analytics /var/www/html
     #+END_SRC
-  + Copy faq folder to /var/www/html
+  + Copy faq folder to /usr/share/nginx/html
     #+BEGIN_SRC command
     sudo cp -r faq /var/www/html
     #+END_SRC
