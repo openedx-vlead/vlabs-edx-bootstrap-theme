@@ -690,13 +690,15 @@ margin-top:120px;
 	 border-right-color: #678f48;
 	 min-height: 115px;
 	line-height:1em;
-height:16em;
+	height:15em;
+
 	
 }
 .border-right-green-dotted a{
 	/*padding-left: 10px;*/
 	display: block;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
+	line-height:1.2em;
 }
 a:focus
 {
@@ -708,12 +710,12 @@ a:focus
 	min-height: 190px !important;
 }
 .poweredby{
-    position: relative;
+position: relative;
 width: 40%;
 height: 100%;
-top: 50px;
-margin-left: 7em;
-    /*left: 22px;*/
+padding-top: 67px;
+/*top: 50px;*/
+left: 96px;
 }
 
 /*========================font classes=======================*/
