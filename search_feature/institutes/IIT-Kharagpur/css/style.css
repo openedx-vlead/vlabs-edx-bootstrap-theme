@@ -937,6 +937,26 @@ font-size: 30px;
   padding-bottom: 10px;
 }
 
+.contactus
+{
+  background: url('../images/bottom-line-n.png') no-repeat;
+  background-position: left bottom;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1.5px dotted;
+  border-bottom-color: #888;
+  border-top: 1.5px dotted;
+  border-bottom-color: #888;
+  padding-top: 10px;
+margin-top:20px;
+}
+
+.contectus-gray-smallest
+{
+	color: #337ab7;
+	font-size: 12px;
+}
+
 .lab-list-row-col-2
 {
 	margin-top: 15px;

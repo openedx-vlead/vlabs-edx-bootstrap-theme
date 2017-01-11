@@ -937,6 +937,69 @@ font-size: 30px;
   padding-bottom: 10px;
 }
 
+
+.modal-content1{
+position: relative;
+background-color: #fff;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+border: 1px solid #999;
+border: 1px solid rgba(0,0,0,.2);
+border-radius: 6px;
+outline: 0;
+-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+box-shadow: 0 3px 9px rgba(0,0,0,.5);
+width: 37%; 
+top: 29em; 
+left: 42em; 
+}
+
+/*pop tag*/
+#element_to_pop_up { 
+    background-color:#fff;
+    border-radius:15px;
+    color:#000;
+    display:none; 
+    padding:20px;
+    min-width:400px;
+    min-height: 180px;
+}
+.b-close{
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+
+.my-button {
+    margin: 1em;
+}
+/*end pop tage*/
+
+
+
+
+
+.contactus
+{
+  background: url('../images/bottom-line-n.png') no-repeat;
+  background-position: left bottom;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1.5px dotted;
+  border-bottom-color: #888;
+  border-top: 1.5px dotted;
+  border-bottom-color: #888;
+  padding-top: 10px;
+margin-top:20px;
+}
+
+.contectus-gray-smallest
+{
+	color: #337ab7;
+	font-size: 12px;
+}
+
 .lab-list-row-col-2
 {
 	margin-top: 15px;
