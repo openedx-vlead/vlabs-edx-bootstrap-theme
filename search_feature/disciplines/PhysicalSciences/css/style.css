@@ -718,6 +718,10 @@ padding-top: 67px;
 left: 96px;
 }
 
+.handpointer{cursor: pointer;
+text-decoration: none !important;
+}
+
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
@@ -804,6 +808,7 @@ font-size: 30px;
 .nounderline
 {
 	text-decoration: none;
+	cursor:pointer;
 }
 
 .nounderline:HOVER
