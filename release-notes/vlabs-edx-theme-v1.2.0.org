@@ -1,0 +1,31 @@
+#+TITLE: VLABS Open edX Theme v1.2.0
+#+AUTHOR: VLEAD
+#+DATE: [2017-02-07]
+
+* Introduction
+  This document describes the release notes of =VLABS Open edX Theme=
+  version =v1.2.0=.
+
+
+* Features 
+  Theme currently applied on VLABS Open edx (vlabs.ac.in and
+  open-edx.vlabs.ac.in) contains the following features -
+  + Custom vlabs.ac.in look alike theme for Virtual Labs Open edX.
+  + Discipline and Institute wise categorization of labs 
+  + All labs linked and served from vlabs.ac.in are listed in VLABS Open edX 
+  + Announcements section to list latest news and information.
+
+
+* Changes and ammendments in this release 
+  + Custom "CONTACT" page to get the contacts
+  + Fix in the footer to open social networking connections in new tab
+  + Addition of Teachers' Community and link in footer
+  + Link to =College cloud edition= in footer
+  + Link to =Workshops= in footer
+  + Addition of =Reference Book Section= and =Syllabus Mapping= to synchronize with vlab.co.in
+
+ 
+* Documentation
+  https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/index.org 
+
+
