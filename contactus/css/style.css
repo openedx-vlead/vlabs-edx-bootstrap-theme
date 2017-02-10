@@ -721,7 +721,25 @@ left: 96px;
 .handpointer{cursor: pointer;
 text-decoration: none !important;
 }
+.hrline   {
+    
+    background: url("../images/hrline.png") no-repeat scroll 50% bottom transparent;
+    height: 6px;
+    height: 6px;
+background-size: 100% 100%;
 
+width: 100%;
+max-width: 974px;
+}
+
+.hr{
+    color: #ccc;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin: 3em 0px;
+    clear: both;
+}
 /*========================font classes=======================*/
 .text-h2-lightblue
 {
