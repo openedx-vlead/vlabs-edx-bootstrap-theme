@@ -71,11 +71,6 @@ site_status_msg = get_site_status_msg(course_id)
     </div>
 
 
-
-
-
-
-
     <div class="col-md-7">
       % if course:
       <h2><span class="provider">${course.display_org_with_default | h}:</span>
@@ -196,6 +191,7 @@ site_status_msg = get_site_status_msg(course_id)
 %endif
 
 <%include file="help_modal.html"/>
+
 
 <script type="text/javascript">
   $(document).ready(function(){

@@ -39,23 +39,33 @@ openedx.
   + Once done, restart services using /edx/bin/supervisorctl/ restart all 
 
 
-* Enable Search categorization in Open edX
+* Enable external custom features in VLABS Open edX
   All Labs available must be categorized as that in vlabs.ac.in on the basis of 
   Disciplines and Institutes. To acheive this, custom html pages are served
-  from VLABS Open edX server. To let it work, follow the steps given -
+  from VLABS Open edX server. Following features are server from custom html  -
+
+  + Search Feature 
+  + Analytics 
+  + Announcements 
+  + Contact Us 
+  + FAQ
+  
+ To apply the changes, follow the steps given below -
+  
   + Clone repository https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme
     #+BEGIN_SRC command
     git clone https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme edx-bootstrap-theme
     #+END_SRC
-  + Copy folder search_feature to /usr/share/nginx/html/
+
+  + Change directory to scripts in vlabs-edx-bootstrap-theme 
     #+BEGIN_SRC command
-    sudo cp -r search_feature /var/www/html
+    cd edx-bootstrap-theme/scripts 
     #+END_SRC
-  + Copy analytics folder to /usr/share/nginx/html
+
+  + Execute the shell script 
     #+BEGIN_SRC command
-    sudo cp -r analytics /var/www/html
+    sh set-features.sh 
     #+END_SRC
-  + Copy faq folder to /usr/share/nginx/html
-    #+BEGIN_SRC command
-    sudo cp -r faq /var/www/html
-    #+END_SRC
+   
+  + Compile the assets of theme 
+  

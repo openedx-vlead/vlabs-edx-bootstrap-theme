@@ -11,6 +11,8 @@ sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/college-cloud-edition /usr
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/analytics /usr/share/nginx/html/
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/contactus /usr/share/nginx/html/
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/faq /usr/share/nginx/html/
+sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/licensing /usr/share/nginx/html/
+sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/common /usr/share/nginx/html/
 
 
 # Copy Feedback util file 
