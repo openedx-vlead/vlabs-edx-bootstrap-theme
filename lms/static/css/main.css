@@ -54,7 +54,8 @@ h4{
 }
 
 a {
-  color: #c52d2f;
+   color:#77BB41
+  /*color: #c52d2f;*/
   -webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
