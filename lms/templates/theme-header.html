@@ -228,6 +228,52 @@ site_status_msg = get_site_status_msg(course_id)
         </div>
     </div>
 </div>
+
+
+
+<div class="selectizing-wrapper">
+		    <select class="custom-select-one">
+		      	<option value="0">Custom select options</option>
+		      	<option value="1">Testing my custom select</option>
+		      	<option value="2">This is another option</option>
+		    </select>
+		    <select class="custom-select-two">
+		      	<option value="0">Facebook</option>
+		      	<option value="2">Google</option>
+		      	<option value="3">Yahoo!</option>
+		      	<option value="4" selected="">Twitter</option>
+		      	<option value="5">Princess</option>
+		      	<option value="6">Youtube</option>
+		      	<option value="8">Instagram</option>
+		    </select>
+		    <select class="other-custom-select">
+		      	<option value="0">Firefox</option>
+		      	<option value="2">Chrome</option>
+		      	<option value="3">Safari</option>
+		      	<option value="4">Internet Explorer</option>
+		    </select>
+<select class="other-custom-select">
+		      	<option value="0">Firefox</option>
+		      	<option value="2">Chrome</option>
+		      	<option value="3">Safari</option>
+		      	<option value="4">Internet Explorer</option>
+		    </select>
+<select class="other-custom-select">
+		      	<option value="0">Firefox</option>
+		      	<option value="2">Chrome</option>
+		      	<option value="3">Safari</option>
+		      	<option value="4">Internet Explorer</option>
+		    </select>
+<select class="other-custom-select">
+		      	<option value="0">Firefox</option>
+		      	<option value="2">Chrome</option>
+		      	<option value="3">Safari</option>
+		      	<option value="4">Internet Explorer</option>
+		    </select>
+	  	</div>
+	  	
+	</div>
+
 </header>
 
 
@@ -242,6 +288,72 @@ site_status_msg = get_site_status_msg(course_id)
 %endif
 
 <%include file="help_modal.html"/>
+
+
+<style>
+@import url(http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css);
+@import url('https://fonts.googleapis.com/css?family=Wire+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* GENERAL */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Lato', sans-serif;
+	}
+    
+    
+    </style>
+<link rel="stylesheet" href="css/dom.selectizing.css">
+<link rel="stylesheet" href="css/icon.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/dom.selectizing.js"></script>
+	<!-- <script type="text/javascript" src="js/main.js"></script> -->
+	<script>
+		jQuery(document).ready(function($) {
+			$('.custom-select-one').selectizing({
+				background: '#50C9AD',
+				title: 'This is a custom title',
+				change: function(){
+					var value = $(this).val();
+      				var text = $(this).find('option:selected').html();
+					$('#event-change').html(value + ' : ' + text);
+				}
+			});
+
+			$('.custom-select-two').selectizing({
+				background: '#50C9AD',
+				change: function(){
+					var value = $(this).val();
+      				var text = $(this).find('option:selected').html();
+					$('#event-change').html(value + ' : ' + text);
+				}
+			});
+
+			$('.other-custom-select').selectizing({
+				background: 'crimson',
+				change: function(){
+					// do something on value changes.
+				}
+			});
+		});
+	</script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 <style>
 ul {
