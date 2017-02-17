@@ -59,7 +59,7 @@
 			                        <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a menu-a-active">ALL LABS</a>
+			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a ">ALL LABS</a>
 			                    </li>
 <li class="page-scroll menu-li ">
                                                 <a href="https://vlabs.ac.in/courses" class="menu-a">ALL LABS ON OPENEDX</a>
@@ -98,15 +98,15 @@
 
 <div class="tab">
 	
-  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Expression of Interest For Workshops </a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Virtual Labs College Cloud Edition </a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">Frequently Asked Questions</a>
+<a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Expression of Interest For Workshops </a>
+  <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Virtual Labs College Cloud Edition </a>
+  <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">Virtual Labs </a>
 </div>
 
 <div id="London" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
 <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
-				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; text-align:center">Expression of Interest For Workshops </h2><br>
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; text-align:center">Frequently Asked Questions </h2><br>
 					
 					<div class="row" style="margin-left: 5px; margin-right: 35px;text-align: justify;">
 					<p class="text-h3-darkblue-bold">Q1. What is a Virtual Labs Workshop ? </p>
@@ -233,7 +233,7 @@ On the other hand the online version is available at all times but is dependent 
   <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
   <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; text-align:center">
-Virtual Labs College Cloud Edition </h2><br>
+Frequently Asked Questions </h2><br>
 					
 					<div class="row" style="margin-left: 5px; margin-right: 35px;text-align: justify;">
 					<p class="text-h3-darkblue-bold">Q1. What is a Virtual Labs College Cloud Edition ? </p>
@@ -585,6 +585,53 @@ div.tab a:focus, .active {
 }
 
 .topright:hover {color: red;}
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	/*font-weight:bold;*/
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+ 	width:330px;
+
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+        
+
+
 </style>	
 <script>
 function openCity(evt, cityName) {
