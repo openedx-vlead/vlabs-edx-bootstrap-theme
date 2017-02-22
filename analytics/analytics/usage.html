@@ -60,7 +60,7 @@
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Analytics</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Hits</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Visits</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:10%" >Usage</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:10%" >Total Usage</th>
           </tr>
         </thead>
         <tbody>
@@ -79,9 +79,9 @@
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Analytics</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%">No. of Nodal Centers</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >No. of Workshops</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:10%" >Workshop Usage</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%">Total Nodal Centers</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Total Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:10%" >Total Usage</th>
           </tr>
         </thead>
         <tbody>
@@ -101,8 +101,8 @@
         <thead>
           <tr>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Institute Name</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Total No. Nodal Centres</th>
-            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Total No. of Workshops</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Nodal Centres</th>
+            <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:30%" >Workshops</th>
             <th class = "text-h3-darkblue-bold" style= "margin-top: 2px; width:10%" >Usage</th>
           </tr>
         </thead>
@@ -184,8 +184,8 @@
   var dateString = (date.getDate() + '/'
     + ('0' + (date.getMonth() + 1)).slice(-2)
     + '/' + ('0' + (date.getFullYear())).slice(1));
-  document.getElementById("date").innerHTML = "Web Analytics as on "+dateString;
-  document.getElementById("date1").innerHTML = "Workshop Analytics as on "+dateString;
+  document.getElementById("date").innerHTML = "Web Analytics from 14/01/2012   - "+dateString;
+  document.getElementById("date1").innerHTML = "Workshop Analytics from 01/09/2013 - "+dateString;
   }
   function generateAllLabs() {
   var jqxhr = $.getJSON('https://stats.vlabs.ac.in/analytics/labs', function(data) {
