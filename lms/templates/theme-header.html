@@ -97,10 +97,10 @@ site_status_msg = get_site_status_msg(course_id)
         <ol class="left nav-global authenticated header-btns">
             % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
               <li class="nav-global-01">
-                <a class="btn btn-info btn-sm pull-right color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Labs')}</a>
+                <!--a class="btn btn-info btn-sm pull-right color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Labs')}</a-->
 
 <!--**find search button for center alig ->> 
-<!--a class="btn btn-info btn-sm pull-right color-black" style='margin-top:20px;margin-left:7em' href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a-->
+<!--a class="btn btn-info btn-sm pull-right color-black" style='margin-top:20px;margin-left:7em' href="${marketing_link('COURSES')}"><!--i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a-->
               </li>
             % endif
             %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
@@ -142,7 +142,7 @@ site_status_msg = get_site_status_msg(course_id)
           <%block name="navigation_global_links_authenticated">
             % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
               <li class="nav-global-01">
-                <a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5" style="margin-right: 5px;"></i>${_('Find Courses')}</a>
+                <!--a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5" style="margin-right: 5px;"></i>${_('Find Courses')}</a-->
                 <!--<a class="btn btn-info btn-sm pull-right color-black style="margin-top:20px;margin-left:9px" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>-->
               </li>
             % endif
@@ -179,7 +179,82 @@ site_status_msg = get_site_status_msg(course_id)
       % endif
       </div>
     </nav>
+<div class="top-bar top-bar-header">
+    <div class="row">
+        <div class="col-md-12">
+          
+                
+<div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+
+			                           <ul class="nav navbar-nav navbar-left menu-ul">
+			                   <!-- <li class="page-scroll menu-li ">
+			                        <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
+			                    </li>-->
+			                   <li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a">All Labs</a>
+			                    </li>
+					<li class="page-scroll menu-li ">
+                                                <a href="https://vlabs.ac.in/courses" class="menu-a">All Labs on OpenedX</a>
+                                            </li>
+			                  <!--  <li class="page-scroll menu-li ">
+			                        <a href="https://vlabs.ac.in/search_feature/institutes/IIT-Delhi/" class="menu-a">Partners</a>
+			                    </li>-->
+<li class="page-scroll menu-li ">
+			                        <a target="_blank" href="https://plus.google.com/communities/104131148292250423165" class="menu-a">Teachers' Community</a>
+
+			                    </li>
+  
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/workshops/" class="menu-a">Workshops</a>
+			                    </li>
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="menu-a">College Cloud Edition</a>
+			                    </li>
+
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/contactus" class="menu-a">Contact</a>
+			                    </li>
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/faq/" class="menu-a">FAQ</a>
+			                    </li>
+
+			                </ul>
+
+
+
+			            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--<ul>
+  
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Labs</a>
+    <div class="dropdown-content">
+      <a href="#">All Labs</a>
+      <a href="#">All Labs on OpenedX</a>
+     
+    </div>
+  </li>
+<li class="dropdown">
+    <a href="#" class="dropbtn">Community</a>
+    <div class="dropdown-content">
+      <a href="#">Teachers</a>
+      <a href="#">Developers</a>
+      
+    </div>
+  </li>
+<li><a href="http://vlabs.ac.in:5959/contactus" class="dropbtn">Contact us</a></li>
+  <li><a href="http://vlabs.ac.in:5959/workshops/" class="dropbtn">Workshops</a></li>
+  <li><a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="dropbtn">College Edition</a></li>
+<li><a href="https://vlabs.ac.in/search_feature/institutes/IIT-Delhi/" class="dropbtn">Partners</a></li>
+</ul>-->
+
 </header>
+
+
 % if course:
 <!--[if lte IE 8]>
 <div class="ie-banner" aria-hidden="true">${_('<strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using {chrome_link} or {ff_link}.').format(chrome_link='<a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Chrome</a>', ff_link='<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>')}</div>
@@ -191,8 +266,89 @@ site_status_msg = get_site_status_msg(course_id)
 %endif
 
 <%include file="help_modal.html"/>
+<!--<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   /* background-color: #404040;*/
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>-->
 
 
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #404040;}*/
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #2C99CE;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #DBDBDB;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
 <script type="text/javascript">
   $(document).ready(function(){
     $('.dropdown-menu > li>a:not(a[href="#"])').on('click', function() {
