@@ -333,7 +333,8 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
-	background-color: #c52d2f;
+	/*background-color: #c52d2f;*/
+background-color: gray;
   color: #fff;
 }
 
