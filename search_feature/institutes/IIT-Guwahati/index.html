@@ -28,63 +28,13 @@
 <div id="top">
 	<header>
 	<!-- Navigation -->
-	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
-	        <div class="container-fluid">
-			            <!-- Brand and toggle get grouped for better mobile display -->
-			            <div class="navbar-header page-scroll">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			                    <span class="sr-only">Toggle navigation</span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                </button>
-			                <a class="navbar-brand main-logo-a" href="https://vlabs.ac.in"><img src="images/logo-new.png" class="img-responsive main-logo"></a>
-			            </div>			
-			                        
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
-			               
-			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
-			                	<li>
-			                		<form method="get" action="search-result.html">
-			                        	<!--<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
-			                        	<input type="submit" value="" class="search-button" />-->
-			                        </form>
-			                	</li>
-			                </ul>
-			                
-							<ul class="nav navbar-nav navbar-right menu-ul">
-			                    <li class="page-scroll menu-li ">
-			                        <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
-			                    </li>
-			                    <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a">ALL LABS</a>
-			                    </li>
-<li class="page-scroll menu-li ">
-                                                <a href="https://vlabs.ac.in/courses" class="menu-a">ALL LABS ON OPENEDX</a>
-                                            </li>
-			                    <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Delhi/" class="menu-a">PARTNERS</a>
-			                    </li>
-			                    <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/contactus" class="menu-a">CONTACT</a>
-			                    </li>
-<!-- 			                    <li class="page-scroll menu-li">
-			                        <a href="#signin"  class="menu-a" >SIGN IN</a>
-			                    </li> -->
-			                     <li class="page-scroll menu-li search-form-li">
-			                        
-			                    </li>
-			                    
-			                </ul>
-			                
-			               
-			                	
-			            </div>
-			            <!-- /.navbar-collapse -->  
-	        </div>
-	        <!-- /.container-fluid -->
-	    </nav>
+	   <script src="js/jquery.js"></script>
+	    <div id="headermerge"> </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+   $("#headermerge").load("http://54.215.208.170:5959/common/header/header.html");
+   });
+</script>
 	</header>
 
 	<div id="content">
