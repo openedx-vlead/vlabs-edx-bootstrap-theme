@@ -3074,8 +3074,9 @@ margin-top:120px;
 .menu-li
 {
 	/* float: right; 
-margin-left: 20px;*/
-	border-radius: 10px;
+	margin-left: 20px; 
+	border-radius: 10px;*/
+	
  	
 	margin-right: 20px;
 }
@@ -3083,7 +3084,7 @@ margin-left: 20px;*/
 .menu-li:HOVER
 {
 	/*background-color: #77BB41 !important;*/
-	background-color: gray !important;
+	background-color: #f1f1f1 !important;
 }
 
 .menu-a:HOVER
@@ -3095,7 +3096,7 @@ margin-left: 20px;*/
 .menu-li-active
 {
 	  /*background-color: #77BB41;*/
- background-color: gray !important;
+ background-color: #f1f1f1 !important;
 }
 
 .menu-div
