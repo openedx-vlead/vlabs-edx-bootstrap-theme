@@ -13,6 +13,7 @@ sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/contactus /usr/share/nginx
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/faq /usr/share/nginx/html/
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/licensing /usr/share/nginx/html/
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/common /usr/share/nginx/html/
+sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/announcements /usr/share/nginx/html/
 
 
 # Copy Feedback util file 
