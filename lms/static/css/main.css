@@ -327,7 +327,7 @@ input.search-form:hover {
   padding: 5px 12px;
   margin: 0;
   border-radius: 3px;
-  color: #fff;
+ /* color: #fff;*/ /*hideded for menu bar*/
   line-height: 24px;
   display: inline-block;
 }
@@ -354,7 +354,7 @@ background-color: #f4f5f7;
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #c52d2f;
+  /*background-color: #c52d2f;*/ /*hideded for menu bar*/
   color: #fff;
 }
 
@@ -384,7 +384,7 @@ background-color: #f4f5f7;
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-  background-color: #c52d2f;
+  /*background-color: #c52d2f;*//*hideded for menu bar*/
   color: #fff;
 }
 
