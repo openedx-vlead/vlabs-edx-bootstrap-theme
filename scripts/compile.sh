@@ -30,4 +30,4 @@ paver update_assets lms --settings=aws
 EOF
 
 # restart lms instance
-sudo /edx/bin/supervisorctl restart
+sudo /edx/bin/supervisorctl restart all
