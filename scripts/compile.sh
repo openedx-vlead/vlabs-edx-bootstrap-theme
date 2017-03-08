@@ -4,6 +4,8 @@
 # Features included contact us, analytics, announcements, college cloud info, search feature,
 # FAQ
 
+
+
 # Copy all folders having custom html to serve
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/search_feature /usr/share/nginx/html/
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/workshops /usr/share/nginx/html/
@@ -19,3 +21,13 @@ sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/announcements /usr/share/n
 # Copy Feedback util file 
 sudo cp -r /edx/app/edxapp/themes/edx-bootstrap-theme/feedback/feedback_utils.js /usr/share/nginx/html
 
+
+# update assets as edxapp user and compile assets 
+sudo -H -u edxapp bash << EOF
+source /edx/app/edxapp/edxapp_env
+cd /edx/app/edxapp/edx-platform
+paver update_assets lms --settings=aws 
+EOF
+
+# restart lms instance
+sudo /edx/bin/supervisorctl restart
