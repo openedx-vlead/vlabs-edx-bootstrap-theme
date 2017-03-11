@@ -935,7 +935,7 @@ a.accordion-toggle  i{
   margin-top: 0;
 }
 
-.nav-tabs>li>a:hover{
+/*.nav-tabs>li>a:hover{
   background: #1f1f20;
   color:#fff;
 }
@@ -947,7 +947,7 @@ a.accordion-toggle  i{
   color:#fff;
   background: #1f1f20;
   position: relative;
-}
+}*/
 
 .nav-tabs>li.active>a:after {
   position: absolute;
