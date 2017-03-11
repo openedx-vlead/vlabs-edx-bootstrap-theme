@@ -361,7 +361,7 @@ margin-top:120px;
 	padding-top: 10px !important;
 }
 
-.menu-a
+/*.menu-a
 {
 	font-size: 14px !important;
 	font-family: 'Raleway' !important;
@@ -382,11 +382,12 @@ margin-top:120px;
 {
 	/* float: right; 
 	border-radius: 10px;*/
- 	margin-left: 20px;
-	margin-right: 20px;
+ /*this is hiding for menu*/
+ 	/*margin-left: 20px;
+	margin-right: 20px;*/
 }
 
-.menu-li:HOVER
+/*.menu-li:HOVER
 {
 	background-color: #f1f1f1 !important;
 }
@@ -406,7 +407,7 @@ margin-top:120px;
 
 }
 
-.menu-ul
+/*.menu-ul
 {
 	/*margin-top: 45px;*/
 }
