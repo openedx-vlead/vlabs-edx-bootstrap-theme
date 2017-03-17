@@ -1,2 +1,0 @@
-grep -rl '<a href="http://vlabs.ac.in:5959/workshops" class="text-normal-gray-small nounderline" style="color:white" target="_blank"> Workshops</a>' . |xargs sed -i "s/<a href=\"http:\/\/feedback.vlabs.ac.in\/" class=\"text-normal-gray-small nounderline\" style=\"color:white\" target=\"_blank\"> Workshops<\/a>/<a href=\"http:\/\/vlabs.ac.in:5959\/workshops\" class=\"text-normal-gray-small nounderline\" style=\"color:white\" target=\"_blank\"> Workshops<\/a>"
-
