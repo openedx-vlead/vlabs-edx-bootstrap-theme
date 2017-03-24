@@ -2673,6 +2673,7 @@ header.global .primary > a{
 
 .content-wrapper {
     min-height: 460px;
+margin-top:105px;
 }
 
 .dashboard {
