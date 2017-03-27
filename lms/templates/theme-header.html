@@ -158,7 +158,25 @@ site_status_msg = get_site_status_msg(course_id)
 
       </div>
 
+<div class="col-md-12 header-btns-login">
 
+        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
+            % else:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
+            % endif
+        % endif
+       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
+            % else:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
+            % endif
+        % endif
+
+      % endif
+      </div>
 
       
 
@@ -292,25 +310,7 @@ site_status_msg = get_site_status_msg(course_id)
 
 
 
-<li><div class="col-md-12 header-btns-login">
 
-        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
-            % else:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
-            % endif
-        % endif
-       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
-            % else:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
-            % endif
-        % endif
-
-      % endif
-      </div></li>
 <!--<li class=""><a href="https://vlabs.ac.in/register" class="">Register</a></li>
 <li id="nav-login-btn" class=""><a href="https://vlabs.ac.in/login" class="">Sign in</a></li>-->
         
