@@ -38,24 +38,34 @@ site_status_msg = get_site_status_msg(course_id)
 </div>
 % endif
 </%block>
-  <!--div class="top-bar top-bar-header">
+  <div class="top-bar top-bar-header">
     <div class="row">
         <div class="col-md-6 col-xs-6">
             <div class="top-number"><p><i class="fa fa-phone-square"></i> +0123 456 70 90</p></div>
         </div>
         <div class="col-md-6 col-xs-6">
-           <div class="social">
-                <ul class="social-share social-share-header pull-right">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                </ul>
-           </div>
+           <div class="col-md-12 header-btns-login">
+
+        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
+            % else:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
+            % endif
+        % endif
+       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
+            % else:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
+            % endif
+        % endif
+
+      % endif
+      </div>
         </div>
     </div>
-</div></.top-bar-->
+</div>
 
   <header id="global-navigation" class="global ${"slim" if course else ""} " ><!--took this class out from this line "navbar navbar-inverse"-->
     <!-- This file is only for demonstration, and is horrendous! -->
