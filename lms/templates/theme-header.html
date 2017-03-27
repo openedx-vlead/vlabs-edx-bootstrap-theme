@@ -57,14 +57,15 @@ site_status_msg = get_site_status_msg(course_id)
     </div>
 </div></.top-bar-->
 
-  <header id="global-navigation" class="global ${"slim" if course else ""} navbar navbar-inverse" >
+  <header id="global-navigation" class="global ${"slim" if course else ""} " ><!--took this class out from this line "navbar navbar-inverse"-->
     <!-- This file is only for demonstration, and is horrendous! -->
     <nav aria-label="${_('Global')}">
     <div class="col-md-1">
       <h1 class="logo pull-left" style="margin-top: 10px;">
         <a href="${marketing_link('ROOT')}">
           <%block name="navigation_logo">
-              <img src="${static.url("images/logo.png")}"  style="width:2.8em" alt=""/>
+              <!--img src="${static.url("images/logo.png")}"  style="width:2.8em" alt=""/-->
+              <img src="http://vlabs-test.vlabs.ac.in/static/edx-bootstrap-theme/images/logo.7e034286282a.png"  style="width:2.8em" alt=""/>
           </%block>
         </a>
       </h1>
@@ -158,31 +159,30 @@ site_status_msg = get_site_status_msg(course_id)
       </div>
 
 
-      <div class="col-md-4 header-btns-login">
 
-        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
-            % else:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
-            % endif
-        % endif
-       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
-            % else:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
-            % endif
-        % endif
+      
 
-      % endif
-      </div>
-    </nav>
-<div class="top-bar top-bar-header">
-    <div class="row">
-        <div class="col-md-12">
-          
-                 <nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation" style="z-index: 9999999">
+   <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--<script async="" src="https://vlabs.ac.in:5959/common/header/files/CVADLKQJ_002.html"></script>-->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    
+    
+      <title>header</title>
+   
+    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootstrap.css">
+    <!--<link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/font-awesome.css">-->
+    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootsnipp.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+    <![endif]-->
+
+
+    <nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation" style="z-index: 9999999">
   <div >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -291,76 +291,67 @@ site_status_msg = get_site_status_msg(course_id)
 						</li>
 
 
-<!--<div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
 
-			                           <ul class="nav navbar-nav navbar-left menu-ul">
-			                   <!-- <li class="page-scroll menu-li ">
-			                        <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
-			                    </li>-->
-			                 <!--  <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a">All Labs</a>
-			                    </li>
-					<li class="page-scroll menu-li ">
-                                                <a href="https://vlabs.ac.in/courses" class="menu-a">All Labs on OpenedX</a>
-                                            </li>
-			                  <!--  <li class="page-scroll menu-li ">
-			                        <a href="https://vlabs.ac.in/search_feature/institutes/IIT-Delhi/" class="menu-a">Partners</a>
-			                    </li>-->
-<!--<li class="page-scroll menu-li ">
-			                        <a target="_blank" href="https://plus.google.com/communities/104131148292250423165" class="menu-a">Teachers' Community</a>
+<li><div class="col-md-12 header-btns-login">
 
-			                    </li>
-  
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/workshops/" class="menu-a">Workshops</a>
-			                    </li>
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="menu-a">College Cloud Edition</a>
-			                    </li>
+        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
+            % else:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
+            % endif
+        % endif
+       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
+            % else:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
+            % endif
+        % endif
 
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/contactus" class="menu-a">Contact</a>
-			                    </li>
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/faq/" class="menu-a">FAQ</a>
-			                    </li>
-
-			                </ul>
+      % endif
+      </div></li>
+<!--<li class=""><a href="https://vlabs.ac.in/register" class="">Register</a></li>
+<li id="nav-login-btn" class=""><a href="https://vlabs.ac.in/login" class="">Sign in</a></li>-->
+        
+      <!-- <li class="hidden-xs"><a href="#toggle-search" class="">Search <img src ="images/bsearch.png" style="width:23px"></a></li>-->
+<!--<li class="hidden-xs"><a href="#toggle-search" class=""><span class="glyphicon glyphicon-search"></span></a></li>-->
+      </ul>
 
 
+       <!-- <div class="nav navbar-nav navbar-right" > <li class=""><a href="" class="">Register</a></li>
+          <li id="nav-login-btn" class=""><a href="" class="">Sign in</a></li>
+        
+        <li class="hidden-xs"><a href="#toggle-search" class="">Search <img src ="images/search.png" style="width:30px"></a></li>
+<!--<li class="hidden-xs"><a href="#toggle-search" class=""><span class="glyphicon glyphicon-search"></span></a></li>-->
+      <!--</ul></div>  -->       
+    </div>
+  </div>
 
-			            </div>-->
+
+
+  <!--search start from here-->
+
+<!--<div class="bootsnipp-search " style="width:50%; left:606px">
+    <div class="">
+      <form action="http://vlabs.ac.in" method="GET" role="search">
+        <div class="input-group">
+          <input class="form-control" name="q" placeholder="Enter lab name" type="text">
+	  <span class="input-group-btn">
+            <button class="btn btn-primary" type="reset"><img src="images/wsearch.png" style="width:23px"></button>
+          </span>
+ <input class="form-control" name="q" placeholder="Enter Board Area" type="text">
+	  <span class="input-group-btn">
+            <button class="btn btn-primary" type="reset"><img src="images/wsearch.png" style="width:23px"></button>
+          </span>
+
 
         </div>
+      </form>
     </div>
-</div>
-
-<!--<ul>
-  
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Labs</a>
-    <div class="dropdown-content">
-      <a href="#">All Labs</a>
-      <a href="#">All Labs on OpenedX</a>
-     
-    </div>
-  </li>
-<li class="dropdown">
-    <a href="#" class="dropbtn">Community</a>
-    <div class="dropdown-content">
-      <a href="#">Teachers</a>
-      <a href="#">Developers</a>
-      
-    </div>
-  </li>
-<li><a href="http://vlabs.ac.in:5959/contactus" class="dropbtn">Contact us</a></li>
-  <li><a href="http://vlabs.ac.in:5959/workshops/" class="dropbtn">Workshops</a></li>
-  <li><a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="dropbtn">College Edition</a></li>
-<li><a href="https://vlabs.ac.in/search_feature/institutes/IIT-Delhi/" class="dropbtn">Partners</a></li>
-</ul>-->
-
-</header>
-
+  </div>-->
+<!--search end from here-->
+</nav>
 
 % if course:
 <!--[if lte IE 8]>
@@ -373,63 +364,9 @@ site_status_msg = get_site_status_msg(course_id)
 %endif
 
 <%include file="help_modal.html"/>
-<!--<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-   /* background-color: #404040;*/
-}
+           
 
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>-->
-
-<link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootstrap.css">
-    <!--<link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/font-awesome.css">-->
-    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootsnipp.css">
- <!-- <script src="http://vlabs.ac.in:5959/common/header/files/jquery-1.js"></script>
+   <!-- <script src="http://vlabs.ac.in:5959/common/header/files/jquery-1.js"></script>
     <script src="http://vlabs.ac.in:5959/common/header/files/bootstrap.js"></script>-->
     <script src="https://vlabs.ac.in:5959/common/header/files/scripts.js"></script>
    <!-- <script async="" src="files/adsbygoogle.html"></script>-->
@@ -479,38 +416,6 @@ li.dropdown {
 }
 </style>
 
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /*background-color: #404040;}*/
+</body></html>
 
-li {
-    float: left;
-}
 
-li a {
-    display: block;
-    color: #2C99CE;
-    text-align: center;
-    /*padding: 14px 16px;*/
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #DBDBDB;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-</style>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.dropdown-menu > li>a:not(a[href="#"])').on('click', function() {
-      self.location = $(this).attr('href');
-    });
-  });
-</script>
