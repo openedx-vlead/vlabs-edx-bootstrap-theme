@@ -39,7 +39,7 @@ site_status_msg = get_site_status_msg(course_id)
 </div>
 % endif
 </%block>
-  <div class="top-bar top-bar-header">
+  <!--div class="top-bar top-bar-header">
     <div class="row">
         <div class="col-md-6 col-xs-6">
             <div class="top-number"><p><i class="fa fa-phone-square"></i> +0123 456 70 90</p></div>
@@ -56,7 +56,7 @@ site_status_msg = get_site_status_msg(course_id)
            </div>
         </div>
     </div>
-</div>
+</div></.top-bar-->
 
   <header id="global-navigation" class="global ${"slim" if course else ""} " ><!--took this class out from this line "navbar navbar-inverse"-->
     <!-- This file is only for demonstration, and is horrendous! -->
@@ -72,7 +72,193 @@ site_status_msg = get_site_status_msg(course_id)
     </div>
 
 
-<nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation" style="z-index: 9999999">
+    <div class="col-md-7">
+      % if course:
+      <h2><span class="provider">${course.display_org_with_default | h}:</span>
+        ${course.display_number_with_default | h}
+        <%
+          display_name = course.display_name_with_default
+          if settings.FEATURES.get('CUSTOM_COURSES_EDX', False):
+            ccx = get_current_ccx()
+            if ccx:
+              display_name = ccx.display_name
+        %>
+        ${display_name}</h2>
+      % endif
+
+      % if user.is_authenticated():
+
+        % if should_display_shopping_cart_func(): # see shoppingcart.context_processor.user_has_cart_context_processor
+              <a class="shopping-cart" href="${reverse('shoppingcart.views.show_cart')}">
+                <i class="icon fa fa-shopping-cart"></i> ${_("Shopping Cart")}
+              </a>
+        % endif
+        % if not course:
+
+        <ol class="left nav-global authenticated header-btns">
+            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
+              <li class="nav-global-01">
+                <!--a class="btn btn-info btn-sm pull-right color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Labs')}</a-->
+
+<!--**find search button for center alig ->> 
+<!--a class="btn btn-info btn-sm pull-right color-black" style='margin-top:20px;margin-left:7em' href="${marketing_link('COURSES')}"><!--i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a-->
+              </li>
+            % endif
+            %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
+              <li>
+                ## Translators: This is short for "System administration".
+                <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
+              </li>
+            %endif
+        </ol>
+
+        %endif
+      </div>
+
+      <div class="col-md-4 header-btns">
+        <div class="dropdown pull-right">
+          <button class="btn btn-primary dropdown-toggle" style="box-shadow: unset;" type="button">${user.username}
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <%block name="navigation_dropdown_menu_links" >
+            <li><a href="${reverse('account_settings')}">${_("Account Settings")}</a></li>
+            <li><a href="${reverse('learner_profile', kwargs={'username': user.username})}">${_("My Profile")}</a></li>
+            </%block>
+            <li><a href="${reverse('logout')}" role="menuitem">${_("Sign Out")}</a></li>
+          </ul>
+        </div>
+      </div>  
+      % else:
+        <%block name="navigation_global_links">
+          % if microsite.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
+              <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
+            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
+                <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
+            % endif
+              <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
+          % endif
+        </%block>
+
+        <ol class="left nav-global authenticated header-btns">
+          <%block name="navigation_global_links_authenticated">
+            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
+              <li class="nav-global-01">
+                <!--a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5" style="margin-right: 5px;"></i>${_('Find Courses')}</a-->
+                <!--<a class="btn btn-info btn-sm pull-right color-black style="margin-top:20px;margin-left:9px" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>-->
+              </li>
+            % endif
+            %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
+              <li>
+                ## Translators: This is short for "System administration".
+                <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
+              </li>
+            %endif
+          </%block>
+        </ol>
+
+      </div>
+
+
+
+      <div class="col-md-4 header-btns-login">
+
+        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
+            % else:
+            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
+            % endif
+        % endif
+       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
+            % else:
+              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
+            % endif
+        % endif
+
+      % endif
+      </div>
+
+<!--this is custom code appended -->
+
+
+   
+</nav>
+
+<div class="top-bar top-bar-header">
+    <div class="row">
+        <div class="col-md-12">
+          
+                
+<div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+
+			                           <ul class="nav navbar-nav navbar-left menu-ul">
+			                   <!-- <li class="page-scroll menu-li ">
+			                        <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
+			                    </li>-->
+			                   <li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a">All Labs</a>
+			                    </li>
+					<li class="page-scroll menu-li ">
+                                                <a href="https://vlabs.ac.in/courses" class="menu-a">All Labs on OpenedX</a>
+                                            </li>
+			                  <!--  <li class="page-scroll menu-li ">
+			                        <a href="https://vlabs.ac.in/search_feature/institutes/IIT-Delhi/" class="menu-a">Partners</a>
+			                    </li>-->
+<li class="page-scroll menu-li ">
+			                        <a target="_blank" href="https://plus.google.com/communities/104131148292250423165" class="menu-a">Teachers' Community</a>
+
+			                    </li>
+  
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/workshops/" class="menu-a">Workshops</a>
+			                    </li>
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="menu-a">College Cloud Edition</a>
+			                    </li>
+
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/contactus" class="menu-a">Contact</a>
+			                    </li>
+<li class="page-scroll menu-li ">
+			                        <a href="http://vlabs.ac.in:5959/faq/" class="menu-a">FAQ</a>
+			                    </li>
+
+			                </ul>
+
+
+
+			            </div>
+
+        </div>
+    </div>
+</div>
+
+</header>
+
+
+<!--DOCTYPE html>
+<!--html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script async="" src="https://vlabs.ac.in:5959/common/header/files/CVADLKQJ_002.html"></script>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    
+    
+      <title>header</title-->
+   
+    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootstrap.css">
+    <!--<link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/font-awesome.css">-->
+    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootsnipp.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+    <![endif]-->
+
+
+    <nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation" style="z-index: 9999999">
   <div >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -198,142 +384,6 @@ site_status_msg = get_site_status_msg(course_id)
 
 
 
-    <div class="col-md-7">
-      % if course:
-      <h2><span class="provider">${course.display_org_with_default | h}:</span>
-        ${course.display_number_with_default | h}
-        <%
-          display_name = course.display_name_with_default
-          if settings.FEATURES.get('CUSTOM_COURSES_EDX', False):
-            ccx = get_current_ccx()
-            if ccx:
-              display_name = ccx.display_name
-        %>
-        ${display_name}</h2>
-      % endif
-
-      % if user.is_authenticated():
-
-        % if should_display_shopping_cart_func(): # see shoppingcart.context_processor.user_has_cart_context_processor
-              <a class="shopping-cart" href="${reverse('shoppingcart.views.show_cart')}">
-                <i class="icon fa fa-shopping-cart"></i> ${_("Shopping Cart")}
-              </a>
-        % endif
-        % if not course:
-
-        <ol class="left nav-global authenticated header-btns">
-            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
-              <li class="nav-global-01">
-                <!--a class="btn btn-info btn-sm pull-right color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Labs')}</a-->
-
-<!--**find search button for center alig ->> 
-<!--a class="btn btn-info btn-sm pull-right color-black" style='margin-top:20px;margin-left:7em' href="${marketing_link('COURSES')}"><!--i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a-->
-              </li>
-            % endif
-            %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
-              <li>
-                ## Translators: This is short for "System administration".
-                <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
-              </li>
-            %endif
-        </ol>
-
-        %endif
-      </div>
-
-      <div class="col-md-4 header-btns">
-        <div class="dropdown pull-right">
-          <button class="btn btn-primary dropdown-toggle" style="box-shadow: unset;" type="button">${user.username}
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <%block name="navigation_dropdown_menu_links" >
-            <li><a href="${reverse('account_settings')}">${_("Account Settings")}</a></li>
-            <li><a href="${reverse('learner_profile', kwargs={'username': user.username})}">${_("My Profile")}</a></li>
-            </%block>
-            <li><a href="${reverse('logout')}" role="menuitem">${_("Sign Out")}</a></li>
-          </ul>
-        </div>
-      </div>  
-      % else:
-        <%block name="navigation_global_links">
-          % if microsite.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
-              <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
-            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
-                <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
-            % endif
-              <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
-          % endif
-        </%block>
-
-        <ol class="left nav-global authenticated header-btns">
-          <%block name="navigation_global_links_authenticated">
-            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
-              <li class="nav-global-01">
-                <!--a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5" style="margin-right: 5px;"></i>${_('Find Courses')}</a-->
-                <!--<a class="btn btn-info btn-sm pull-right color-black style="margin-top:20px;margin-left:9px" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>-->
-              </li>
-            % endif
-            %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
-              <li>
-                ## Translators: This is short for "System administration".
-                <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
-              </li>
-            %endif
-          </%block>
-        </ol>
-
-      </div>
-
-
-
-      <div class="col-md-4 header-btns-login">
-
-        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
-            % else:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
-            % endif
-        % endif
-       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
-            % else:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
-            % endif
-        % endif
-
-      % endif
-      </div>
-
-<!--this is custom code appended -->
-
-
-   
-</nav>
-<!--DOCTYPE html>
-<!--html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<script async="" src="https://vlabs.ac.in:5959/common/header/files/CVADLKQJ_002.html"></script>
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    
-    
-      <title>header</title-->
-   
-    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootstrap.css">
-    <!--<link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/font-awesome.css">-->
-    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootsnipp.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-    	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
-    <![endif]-->
-
-
-    
-
-
   <!--search start from here-->
 
 <!--<div class="bootsnipp-search " style="width:50%; left:606px">
@@ -355,7 +405,6 @@ site_status_msg = get_site_status_msg(course_id)
     </div>
   </div>-->
 <!--search end from here-->
-</header>
 
 
 % if course:
