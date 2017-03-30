@@ -204,72 +204,8 @@ site_status_msg = get_site_status_msg(course_id)
     	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
     <![endif]-->
 
-<div class="col-md-4 header-btns">
-        <div class="dropdown pull-right">
-          <button class="btn btn-primary dropdown-toggle" style="box-shadow: unset;" type="button">${user.username}
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <%block name="navigation_dropdown_menu_links" >
-            <li><a href="${reverse('account_settings')}">${_("Account Settings")}</a></li>
-            <li><a href="${reverse('learner_profile', kwargs={'username': user.username})}">${_("My Profile")}</a></li>
-            </%block>
-            <li><a href="${reverse('logout')}" role="menuitem">${_("Sign Out")}</a></li>
-          </ul>
-        </div>
-      </div>  
-      % else:
-        <%block name="navigation_global_links">
-          % if microsite.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
-              <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
-            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
-                <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
-            % endif
-              <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
-          % endif
-        </%block>
 
-        <ol class="left nav-global authenticated header-btns">
-          <%block name="navigation_global_links_authenticated">
-            % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
-              <li class="nav-global-01">
-                <!--a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5" style="margin-right: 5px;"></i>${_('Find Courses')}</a-->
-                <!--<a class="btn btn-info btn-sm pull-right color-black style="margin-top:20px;margin-left:9px" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>-->
-              </li>
-            % endif
-            %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
-              <li>
-                ## Translators: This is short for "System administration".
-                <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
-              </li>
-            %endif
-          </%block>
-        </ol>
-
-      </div>
-
-
-
-      <div class="col-md-4 header-btns-login">
-
-        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
-            % else:
-            <a class="btn btn-primary btn-sm pull-right" style="color:#FFF;margin-top: 0px;" href="/login${login_query()}">${_("Sign in")}</a>
-            % endif
-        % endif
-       % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
-            % else:
-              <a class="btn btn-success btn-sm pull-right" style="color:#FFF;margin-top: 0px;border-radius:4px;" href="/register">${_("Register Now")}</a>
-            % endif
-        % endif
-
-      % endif
-      </div>
-
-   
+    <nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation" style="z-index: 9999999">
   <div >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
