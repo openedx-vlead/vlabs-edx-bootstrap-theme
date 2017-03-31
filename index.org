@@ -6,6 +6,7 @@
 This document briefly explaines the process of customizing theme in
 openedx.
 
+
 * Requirements 
   High level requirement is to make Virtual Labs Open edX, look
   similiar to the [[http://landingpage.base1.vlabs.ac.in/][Virtual labs website]] before transition.  Following
@@ -58,6 +59,7 @@ openedx.
 ** Virtual Labs custom pages requirements 
    Custom pages are served to meet the requirement of similiarty to
    the existing landingpage.vlabs.ac.in.
+
 *** Requirements for FAQ page
    
     + FAQ section for =Expression of Interest for Workshops=.
@@ -101,9 +103,16 @@ openedx.
 
   
 
-* Install 
+*** Other requirements  
+    + Milestone 1 - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/1][VLABS Open edX Release v1.3.0]]
+    + Milestone 2 - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/2][VLABS Open edX Release v2.0.0]]
+    + Milestone 3 - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/3][VLABS Open edX Release v3.0.0]]
+    + Milestone 4 - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/4][Issues raised by IIT Delhi]]
 
-ation of theme
+
+
+* Installation of theme
+
   To apply comprehensive theme on dogwood follow the steps -
   + Login to edX server 
   + cd /edx/app/edxapp/themes/
