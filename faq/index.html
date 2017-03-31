@@ -51,14 +51,14 @@
 				</div> <!-- row end -->
 		<!--	</div> <!-- container-fluid end for slider -->
 
-<div class="tab" >
+<div class="tab" class="col-md-12" >
 	
- <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">Virtual Labs </a>
- <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Virtual Labs College Cloud Edition </a>
- <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"  >Expression on Interest For Workshops </a>
+ <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openbutton(event, 'vlabs')">Virtual Labs </a>
+ <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openbutton(event, 'vlabscce')">Virtual Labs College Cloud Edition </a>
+ <a class="myButton" href="javascript:void(0)" class="tablinks" onclick="openbutton(event, 'vlabseiw')" id="defaultOpen"  >Expression on Interest For Workshops </a>
 </div>
 
-<div id="London" class="tabcontent">
+<div id="vlabseiw" class="tabcontent">
   <!--<span onclick="this.parentElement.style.display='none'" class="topright">x</span>-->
 <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Frequently Asked Questions on Expression of Interest For Workshops </h2><br>
@@ -189,7 +189,7 @@ On the other hand the online version is available at all times but is dependent 
 </div>
 
 
-<div id="Paris" class="tabcontent">
+<div id="vlabscce" class="tabcontent">
   <!--<span onclick="this.parentElement.style.display='none'" class="topright">x</span>-->
   <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">
@@ -298,7 +298,7 @@ Frequently Asked Questions on Virtual Labs College Cloud Edition </h2><br>
 </div>
 
 
-<div id="Tokyo" class="tabcontent">
+<div id="vlabs" class="tabcontent">
   <!--<span onclick="this.parentElement.style.display='none'" class="topright">x</span>-->
 
   <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
@@ -611,7 +611,7 @@ font-size: 17px;
 
 </style>	
 <script>
-function openCity(evt, cityName) {
+function openbutton(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {

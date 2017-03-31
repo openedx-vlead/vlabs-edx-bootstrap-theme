@@ -412,6 +412,7 @@ background-color: #f4f5f7;
   position: relative;
 /*height:300px;
 top:-43px;*/
+padding-top:45px;
 
 }
 
@@ -424,7 +425,6 @@ top:-43px;*/
 /*  margin-top: 150px;*/
   margin-top: 96px;
   margin-left: 11px;
-	
 }
 
 #main-slider .carousel h2 {
@@ -475,7 +475,7 @@ top:-43px;*/
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
   transition: opacity ease-in-out 500ms;
-  /*z-index: 1;*/
+  z-index: 1;
 }
 
 #main-slider .prev,
@@ -516,7 +516,6 @@ top:-43px;*/
 background-color:#5D94C3;
   margin: 0 15px 0 0;
   position: relative;
-padding-top:45px;
 
 }
 
