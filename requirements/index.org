@@ -35,7 +35,7 @@ This document lists the requirements of Virtual Labs theme.
     - =Contact= to open contact us page.
     - =FAQ= to open FAQ page.
 
-  + A common footer with following sections - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/130][#130]]
+  + A common footer with following sections - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/130][#130]], [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/121][#121]]
     - =First Section - UPDATES= (Lab Integration Kit Releases, First Integration
       Workshop at IIIT Hyderabad, Summer Integration Workshop at IIT
       Guwahati, QA Integration Workshop at IIIT Hyderabad, A new set
@@ -56,13 +56,12 @@ This document lists the requirements of Virtual Labs theme.
    Custom pages are served to meet the requirement of similiarty to
    the existing landingpage.vlabs.ac.in.
    
-*** Requirements for FAQ page
-   
+*** Requirements for FAQ page [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/137][#137]]
     + FAQ section for =Expression of Interest for Workshops=.
     + FAQ section for =Virtual LAbs College Cloud Edition=.
     + FAQ section for =Virtual Labs=.
 
-*** Requirements for Virtual Labs Workshops page 
+*** Requirements for Virtual Labs Workshops page  - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/159][#159]]
     A custom web page with common header, footer to pile up
     information about workshops.
 
@@ -88,7 +87,7 @@ This document lists the requirements of Virtual Labs theme.
     + Sections for =Reference Books=, =Syllabus Mapping=, =Lecture=
       wherever available.
  
-*** Requirements Licensing page 
+*** Requirements Licensing page - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/127][#127]]
     This page must be similiar to the one in [[http://landingpage.vlabs.ac.in][Virtual Labs website]]
     before transition -
     + Mention =Virtual Labs Content Licensing=
