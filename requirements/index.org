@@ -56,7 +56,7 @@ This document lists the requirements of Virtual Labs theme.
    Custom pages are served to meet the requirement of similiarty to
    the existing landingpage.vlabs.ac.in.
    
-*** Requirements for FAQ page [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/137][#137]]
+*** Requirements for FAQ page - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/137][#137]]
     + FAQ section for =Expression of Interest for Workshops=.
     + FAQ section for =Virtual LAbs College Cloud Edition=.
     + FAQ section for =Virtual Labs=.
