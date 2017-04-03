@@ -13,17 +13,17 @@ This document lists the requirements of Virtual Labs theme.
 
 ** Virtual Labs landing page requirements   
   + Virtual Labs logo with a common header is to be there on every
-    screen of website.
-  + Register/Login button as provided by Open edX.
+    screen of website - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/144][#144]]
+  + Register/Login button as provided by Open edX - In-built feature of Open edX.
   + Virtual Labs banner with other =About Virtual Labs= images on
     slider.
   + =Number of Labs=, =Experiments=, =Usage= counts and =Workshop
-    Usage= to be displayed on landing page.
-  + Usage must be dynamically fetched from Analytics server.
+    Usage= to be displayed on landing page. - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/155][#155]]
+  + Usage must be dynamically fetched from Analytics server - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/128][#128]]
   + =Disciplines and Domains= section with tile list of all the
-    available disciplines as they were in landingpage.vlabs.ac.in.
+    available disciplines as they were in landingpage.vlabs.ac.in - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/156][#156]]
   + Each discipline in =Disciplines and Domains= section must open the
-    list of labs in of corresponding disciplines.
+    list of labs in of corresponding disciplines. - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/157][#157]]
   + A marquee banner of all =Participating Institutes= having coloured
     logo of each institute.
   + Click on each logo must open a web page listing labs of that
