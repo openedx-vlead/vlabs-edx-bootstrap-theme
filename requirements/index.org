@@ -25,10 +25,8 @@ This document lists the requirements of Virtual Labs theme.
   + Each discipline in =Disciplines and Domains= section must open the
     list of labs in of corresponding disciplines. - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/157][#157]]
   + A marquee banner of all =Participating Institutes= having coloured
-    logo of each institute.
-  + Click on each logo must open a web page listing labs of that
-    institute.
-  + A =Menu item= with following items in the menu -
+    logo of each institute - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/158][#158]]
+  + A =Menu item= with following items in the menu - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/125][#125]]
     - =All Labs= to open =Electronics and Communications= page.
     - =All labs on Open edX= to open /courses api of Open edX.
     - =Teachers' Community= to open G+ Teachers' community page.
@@ -37,8 +35,7 @@ This document lists the requirements of Virtual Labs theme.
     - =Contact= to open contact us page.
     - =FAQ= to open FAQ page.
 
-
-  + A common footer with following sections -
+  + A common footer with following sections - [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/issues/130][#130]]
     - =First Section - UPDATES= (Lab Integration Kit Releases, First Integration
       Workshop at IIIT Hyderabad, Summer Integration Workshop at IIT
       Guwahati, QA Integration Workshop at IIIT Hyderabad, A new set
@@ -58,7 +55,7 @@ This document lists the requirements of Virtual Labs theme.
 ** Virtual Labs custom pages requirements 
    Custom pages are served to meet the requirement of similiarty to
    the existing landingpage.vlabs.ac.in.
-
+   
 *** Requirements for FAQ page
    
     + FAQ section for =Expression of Interest for Workshops=.
