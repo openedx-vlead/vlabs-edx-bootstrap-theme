@@ -22,7 +22,7 @@
   + Addition of Teachers' Community and link in footer
   + Link to =College cloud edition= in footer
   + Link to =Workshops= in footer
-  + Addition of =Reference Book Section= and =Syllabus Mapping= to synchronize with vlab.co.in
+  + Addition of =Reference Book Section= and =Syllabus Mappingping= to synchronize with vlab.co.in
 
  
 * Documentation
