@@ -138,6 +138,9 @@ from openedx.core.djangolib.markup import HTML, Text
         </a>
     </section><!--/#main-slider-->
 
+
+
+
 <!-- Analytics section here-->
  <section id="feature">
         <div class="">
@@ -268,7 +271,7 @@ from openedx.core.djangolib.markup import HTML, Text
 						</div>
 
 					</div>
-					<!--div class="row" style="background: url('images/bottom-line-n.png');  background-repeat: repeat-x; background-position: left bottom; "-->
+					<div class="row" style="background: url('images/bottom-line-n.png');  background-repeat: repeat-x; background-position: left bottom; ">
 
 
 						<div class="col-md-2-5" style="  background: url('static/edx-bootstrap-theme/images/dotted-devider-v-o.png') no-repeat; background-position: right top;">
@@ -289,7 +292,7 @@ from openedx.core.djangolib.markup import HTML, Text
 									<div class="col-md-2-5-2">
 										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_7.png"></div>
 										<h3 class="text-h3-darkblue-bold">Civil Engineering</h3>
-										<p class="text-normal-gray-small">16 Labs | 10 Lectures</p>
+										<p class="text-normal-gray-small">16 Labs | 7 Lectures</p>
 									</div>
 								</div>
 							</a>
@@ -313,7 +316,7 @@ from openedx.core.djangolib.markup import HTML, Text
 									<div class="col-md-2-5-2">
 										<div> <img src="static/edx-bootstrap-theme/images/engineering/icon_9.png"></div>
 										<h3 class="text-h3-darkblue-bold">Chemical Sciences</h3>
-										<p class="text-normal-gray-small">15 Labs | 08 Lectures</p>
+										<p class="text-normal-gray-small">10 Labs | 07 Lectures</p>
 									</div>
 								</div>
 							</a>
@@ -1021,7 +1024,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
 // Stats from stats.vlabs.ac.in/analytics and analytics-api.vlabs.ac.in/api/total_usage added 
 
-var server_data = $.getJSON('http://analytics-api.vlabs.ac.in/api/totalusage', function(data) {
+var server_data = $.getJSON('https://analytics-api.vlabs.ac.in/api/totalusage', function(data) {
   var server_usage = data["total_usage"];
   console.log(server_usage)
   $("#server_usage").html((server_usage).toLocaleString());
@@ -1034,7 +1037,7 @@ var server_data = $.getJSON('http://analytics-api.vlabs.ac.in/api/totalusage', f
 
 
 //workshop use analytics code statrt from here
-var jqxhr = $.getJSON('http://outreach.vlabs.ac.in/get_outreach_analytics', function(data) {
+var jqxhr = $.getJSON('https://outreach.vlabs.ac.in/get_outreach_analytics', function(data) {
   var usage = data["usage"];
   $("#usage").html((usage).toLocaleString());
   })
@@ -1043,4 +1046,9 @@ var jqxhr = $.getJSON('http://outreach.vlabs.ac.in/get_outreach_analytics', func
         console.log("incoming Text " + jqxhr.responseText);
   });
 	</script>
+
+
+
+
+
 

@@ -282,6 +282,7 @@ a.active {
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
+	postion:relative !important;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -289,6 +290,7 @@ a.active {
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
+	
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -359,7 +361,7 @@ margin-top:120px;
 	padding-top: 10px !important;
 }
 
-.menu-a
+/*.menu-a
 {
 	font-size: 14px !important;
 	font-family: 'Raleway' !important;
@@ -373,29 +375,30 @@ margin-top:120px;
 
 .menu-a-active
 {
-	color: white !important;
+	color: black !important;
 }
 
 .menu-li
 {
-	/* float: right; */
-	border-radius: 10px;
- 	margin-left: 20px;
-	margin-right: 20px;
+	/* float: right; 
+	border-radius: 10px;*/
+ /*this is hiding for menu*/
+ 	/*margin-left: 20px;
+	margin-right: 20px;*/
 }
 
-.menu-li:HOVER
+/*.menu-li:HOVER
 {
-	background-color: #77BB41 !important;
+	background-color: #f1f1f1 !important;
 }
 
 .menu-a:HOVER
 {
-	color: white !important;
+	color: black !important;
 }
 .menu-li-active
 {
-	  background-color: #77BB41;
+	  background-color: #f1f1f1;
 }
 
 .menu-div
@@ -404,9 +407,9 @@ margin-top:120px;
 
 }
 
-.menu-ul
+/*.menu-ul
 {
-	margin-top: 45px;
+	/*margin-top: 45px;*/
 }
 
 @media only screen and (max-width: 375px) {
