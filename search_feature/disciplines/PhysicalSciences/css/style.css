@@ -282,6 +282,7 @@ a.active {
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
+	postion:relative !important;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -289,6 +290,7 @@ a.active {
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
+	
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -359,7 +361,7 @@ margin-top:120px;
 	padding-top: 10px !important;
 }
 
-.menu-a
+/*.menu-a
 {
 	font-size: 14px !important;
 	font-family: 'Raleway' !important;
@@ -380,11 +382,12 @@ margin-top:120px;
 {
 	/* float: right; 
 	border-radius: 10px;*/
- 	margin-left: 20px;
-	margin-right: 20px;
+ /*this is hiding for menu*/
+ 	/*margin-left: 20px;
+	margin-right: 20px;*/
 }
 
-.menu-li:HOVER
+/*.menu-li:HOVER
 {
 	background-color: #f1f1f1 !important;
 }
@@ -404,7 +407,7 @@ margin-top:120px;
 
 }
 
-.menu-ul
+/*.menu-ul
 {
 	/*margin-top: 45px;*/
 }
@@ -1021,7 +1024,7 @@ h3 { font-size: 1.3em; }
   display: none;
   position: absolute;
   z-index: 1000;
-  width: 98%;
+  width: 100%;
   background: white;
   border-bottom: 1px solid #aaa;
   border-radius: 4px;
@@ -1045,7 +1048,7 @@ h3 { font-size: 1.3em; }
 .modal-box .modal-header h3,
 .modal-box .modal-header h4 { margin: 0; }
 
-.modal-box .modal-body { padding: 2em 1.5em; }
+.modal-box .modal-body { padding: 4em 1.5em; }
 
 .modal-box footer,
 .modal-box .modal-footer {

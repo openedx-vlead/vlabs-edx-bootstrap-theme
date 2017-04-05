@@ -373,29 +373,29 @@ margin-top:120px;
 
 .menu-a-active
 {
-	color: black !important;
+	color: white !important;
 }
 
 .menu-li
 {
-	/* float: right; 
-	border-radius: 10px;*/
+	/* float: right; */
+	border-radius: 10px;
  	margin-left: 20px;
 	margin-right: 20px;
 }
 
 .menu-li:HOVER
 {
-	background-color: #f1f1f1 !important;
+	background-color: #77BB41 !important;
 }
 
 .menu-a:HOVER
 {
-	color: black !important;
+	color: white !important;
 }
 .menu-li-active
 {
-	  background-color: #f1f1f1;
+	  background-color: #77BB41;
 }
 
 .menu-div
@@ -406,7 +406,7 @@ margin-top:120px;
 
 .menu-ul
 {
-	/*margin-top: 45px;*/
+	margin-top: 45px;
 }
 
 @media only screen and (max-width: 375px) {
