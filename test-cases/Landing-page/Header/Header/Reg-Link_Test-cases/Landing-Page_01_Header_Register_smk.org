@@ -29,10 +29,10 @@
   +  The link should be navigated to a new page where the user can be
      able to enter his/her details to get registered with the Open edx.
   +  Enter the following details:
-      1. Email
-      2  Full Name
-      3. Public User name
-      4. Password
+      i.   Email
+      ii   Full Name
+      iii. Public User name
+      iv.  Password
   + Hi-lighted fields should be filled with out fail. 
  
 * Expected result
