@@ -124,4 +124,4 @@ This document lists the requirements of Virtual Labs theme.
       + =Expression of Interest for Workshops= - http://vlabs.ac.in:5959/faq/index.html
     + Information ::
       + =Contact Us= http://vlabs.ac.in:5959/contactus/
-      + =Annoucements= 
+      + =Annoucements= http://vlabs.ac.in:5959/announcements/index.html
