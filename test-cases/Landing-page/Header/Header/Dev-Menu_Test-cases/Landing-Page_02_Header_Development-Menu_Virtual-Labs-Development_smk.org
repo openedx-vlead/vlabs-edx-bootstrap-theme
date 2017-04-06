@@ -18,7 +18,7 @@
      
 * Pre conditions
 
-  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_smk.org]]
+  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_smk.org]]
   
 * Post conditions
 
