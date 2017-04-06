@@ -1,0 +1,38 @@
+#+Title: Test case
+#+Date: 06 April 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + To check the Functionality of the FAQ button in the Header section. 
+     
+* Pre conditions
+
+  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_smk.org]]
+  
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  Open the landing page of Open Edx.
+  +  Click on the "FAQ" Menu from Header section. 
+  +  Click on the "Expression of Interest for Workshops" link.
+  +  Check whether the link is "[[http://vlabs.ac.in:5959/faq/index.html][Expression on Interest for Workshops]]" page or not.
+  +  Check the functionality of the links. 
+  +  Check whether the links are assigned properly and not broken.
+ 
+* Expected result
+
+  +  The link should navigate to "[[http://vlabs.ac.in:5959/faq/index.html][Exression of interest for Workshops]]" page. 
+
+* Review/comments
