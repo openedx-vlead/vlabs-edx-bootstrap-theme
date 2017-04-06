@@ -373,29 +373,29 @@ margin-top:120px;
 
 .menu-a-active
 {
-	color: white !important;
+	color: black !important;
 }
 
 .menu-li
 {
-	/* float: right; */
-	border-radius: 10px;
+	/* float: right; 
+	border-radius: 10px;*/
  	margin-left: 20px;
 	margin-right: 20px;
 }
 
 .menu-li:HOVER
 {
-	background-color: #77BB41 !important;
+	background-color: #f1f1f1 !important;
 }
 
 .menu-a:HOVER
 {
-	color: white !important;
+	color: black !important;
 }
 .menu-li-active
 {
-	  background-color: #77BB41;
+	  background-color: #f1f1f1;
 }
 
 .menu-div
@@ -406,7 +406,7 @@ margin-top:120px;
 
 .menu-ul
 {
-	margin-top: 45px;
+	/*margin-top: 45px;*/
 }
 
 @media only screen and (max-width: 375px) {
@@ -716,6 +716,12 @@ height: 100%;
 padding-top: 67px;
 /*top: 50px;*/
 left: 96px;
+}
+
+.panel-default > .panel-heading{
+color: #fff;
+background-color: #2C99CE !important;
+border-color: #ddd;
 }
 
 .handpointer{cursor: pointer;

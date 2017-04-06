@@ -39,77 +39,42 @@ google_ad_height = 90;
 	<link rel="stylesheet" href="css/owl.theme.css">
 
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="files/bootstrap.css">
+	<link rel="stylesheet" href="files/font-awesome.css">
+	<link rel="stylesheet" href="files/bootsnipp.css">
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 	<script async="" src="js/analytics.js"></script><script type="text/javascript" src="js/tabs.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>
+
+<!--common start header code-->
+<script src="js/jquery.js"></script>
+	    <div id="headermerge"> </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+   $("#headermerge").load("http://vlabs.ac.in:5959/common/header/header.html");
+   });
+</script>
+<!--common header code end here-->
+
 </head>
 <body id="page-top" class="index">
 <div id="top">
 	<header>
 	<!-- Navigation -->
-	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
-	        <div class="container-fluid">
-			            <!-- Brand and toggle get grouped for better mobile display -->
-			            <div class="navbar-header page-scroll">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			                    <span class="sr-only">Toggle navigation</span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                </button>
-			                <a class="navbar-brand main-logo-a" href="https://vlabs.ac.in"><img src="images/logo-new.png" class="img-responsive main-logo"></a>
-			            </div>
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
-
-			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
-			                	<li>
-			                		<form method="post">
-			                        <!--	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB"/>
-			                        	<input type="submit" value="" class="search-button" />-->
-			                        </form>
-			                	</li>
-			                </ul>
-
-                      <ul class="nav navbar-nav navbar-right menu-ul">
-                          <li class="page-scroll menu-li ">
-                              <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
-                          </li>
-                          <li class="page-scroll menu-li ">
-                              <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a">ALL LABS</a>
-                          </li>
-<li class="page-scroll menu-li ">
-                                                <a href="https://vlabs.ac.in/courses" class="menu-a">ALL LABS ON OPENEDX</a>
-                                            </li>
-                          <li class="page-scroll menu-li ">
-                              <a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Delhi/" class="menu-a">PARTNERS</a>
-                          </li><li class="page-scroll menu-li ">
-                              <a href="http://vlabs.ac.in:5959/contactus" class="menu-a">CONTACT</a>
-                          </li>
-                      </ul>
-
-
-
-
-			            </div>
-			            <!-- /.navbar-collapse -->
-	        </div>
-	        <!-- /.container-fluid -->
-	    </nav>
+	   
 	</header>
 
-	<div id="content">
+	<!--<div id="content">
 			<div class="container-fluid">
 				<div class="row">
 					<hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
 				</div> <!-- row end -->
-			</div> <!-- container-fluid end for slider -->
+		<!--	</div> <!-- container-fluid end for slider -->
 
 
 			<!-- =================================================================================================================================== -->
-			<div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
+			<div class="container-fluid" style="margin-left: 35px; margin-right: 35px; padding-top:102px;">
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 30px; ">Disciplines and Domains</h2>
 
 					<div class="row">
@@ -146,15 +111,15 @@ google_ad_height = 90;
 
 
 <div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://ve-iitg.vlabs.ac.in/" class="sidebar-a">Virtual English and Communication Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab priovides 
 experiments in Business Communication etc, where it is any communication
  that encourages a product, a type of service or organization in order 
 to enhance sale prospects.</p>
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								<div class="col-md-3 lab-list-row-col-2">
+									<a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Guwahati/"><p class="text-normal-gray-small">IIT GUWAHATI</p></a>
 								</div>
 								<!--popup-->
 <div id="popup1" class="modal-box">
@@ -167,16 +132,9 @@ to enhance sale prospects.</p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup1" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup2" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -185,23 +143,39 @@ to enhance sale prospects.</p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup2" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup1" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup2" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-								<div class="col-md-2 lab-list-row-col-2">
+								<div class="col-md-12 lab-list-row-col-2">
 									<a target="_blank" href="http://nptel.ac.in/courses/109104031/" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;"> Lecture</a>
 								</div>
+
+</div>
+
+
+
+
+
 							</div>
 							<div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://anthropology-iitg.vlabs.ac.in/" class="sidebar-a">Virtual Anthropology Lab</a></p>
 									<p class="text-normal-gray-smallest"> This lab inlcudes 
 experiments on reconstruction of a handaxe, identification of shape of 
 flakes and identification of finger patterns of different individuals.</p> 
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									<p class="text-normal-gray-small">IIT GUWAHATI</p>
+								<div class="col-md-3 lab-list-row-col-2">
+									<a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Guwahati/"><p class="text-normal-gray-small">IIT GUWAHATI</p></a>
 								</div>
 								<!--popup-->
 <div id="popup3" class="modal-box">
@@ -214,16 +188,9 @@ flakes and identification of finger patterns of different individuals.</p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup3" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup4" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -232,21 +199,38 @@ flakes and identification of finger patterns of different individuals.</p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup4" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup3" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup4" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-								<div class="col-md-2 lab-list-row-col-2">
+								<div class="col-md-12 lab-list-row-col-2">
 									<a target="_blank" href="http://textofvideo.nptel.iitm.ac.in/105104131/lec29.pdf" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;"> Lecture</a>
 								</div>
+
+</div>
+
+
+
+
+
 							</div>
 							<div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<p class="text-h3-darkblue"><a href="http://vlabs.iitkgp.ernet.in/mv/" target="_blank" class="sidebar-a">Virtual Labs on Mine Ventilation</a></p>
 									<p class="text-normal-gray-smallest"> This lab introduces the experiment in the use of Assmann Psychrometer and estimation of Psychrometer properties.</p>
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									<p class="text-normal-gray-small">IIT KHARAGPUR</p>
+								<div class="col-md-3 lab-list-row-col-2">
+									<a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Kharagpur/"><p class="text-normal-gray-small">IIIT KHARAGPUR</p></a>
 								</div>
 								<!--popup-->
 <div id="popup5" class="modal-box">
@@ -259,16 +243,9 @@ flakes and identification of finger patterns of different individuals.</p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup5" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup6" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -277,13 +254,30 @@ flakes and identification of finger patterns of different individuals.</p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup6" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup5" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup6" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-							<div class="col-md-2 lab-list-row-col-2">
+							<div class="col-md-12 lab-list-row-col-2">
 									<!--<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;" /> Lecture</a>!-->
 								</div>
+
+</div>
+
+
+
+
+
 							</div>
 
 
@@ -292,15 +286,15 @@ flakes and identification of finger patterns of different individuals.</p>
 							20px; margin-top: 30px;
 							">Upcoming Labs</h2>!-->                                           
 							<div style="margin-top: 20px; " class="lab-list-row-div">
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <p class="text-h3-darkblue"><a href="http://vlabs.iitkgp.ernet.in/gs/" target="_blank" class="sidebar-a">Virtual Laboratory on Gaming and Simulation</a></p>
                   <p class="text-normal-gray-smallest"> The Objective of
  the Simulation and Gaming virtual Laboratory at the Department of 
 INDUSTRIAL ENGINEERING and MANAGEMENT is to design simulation 
 experiments on various aspects of Industrial Engineering and Management.</p>
                 </div>
-                <div class="col-md-2 lab-list-row-col-2">
-                  <p class="text-normal-gray-small">IIT KHARAGPUR</p>
+                <div class="col-md-3 lab-list-row-col-2">
+                  <a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Kharagpur/"><p class="text-normal-gray-small">IIIT KHARAGPUR</p></a>
                 </div>
                 <!--popup-->
 <div id="popup7" class="modal-box">
@@ -313,16 +307,9 @@ experiments on various aspects of Industrial Engineering and Management.</p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup7" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup8" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -331,16 +318,32 @@ experiments on various aspects of Industrial Engineering and Management.</p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup8" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+
+
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup7" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup8" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-              <div class="col-md-2 lab-list-row-col-2">
+              <div class="col-md-12 lab-list-row-col-2">
                   <!--<a href="#" class="nounderline">! <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;" /> Lecture</a>-->
                 </div>
+</div>
+
+
+
+
+
               </div>
               <div style="margin-top: 20px; " class="lab-list-row-div">
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <p class="text-h3-darkblue"><a href="http://vlabs.iitkgp.ernet.in/scm/" target="_blank" class="sidebar-a">Structural Characterization of Materials Laboratory</a></p>
                   <p class="text-normal-gray-smallest">This lab is 
 intended to help students at both under-graduate and post-graduate 
@@ -349,8 +352,8 @@ materials at different levels and their applications in different fields
  of engineering. This is expected to enhance enthusiasm among the 
 students to plan and conduct advance research experiments. </p>
                 </div>
-                <div class="col-md-2 lab-list-row-col-2">
-                  <p class="text-normal-gray-small">IIT KHARAGPUR</p>
+                <div class="col-md-3 lab-list-row-col-2">
+                  <a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Kharagpur/"><p class="text-normal-gray-small">IIIT KHARAGPUR</p></a>
                 </div>
                 <!--popup-->
 <div id="popup9" class="modal-box">
@@ -363,16 +366,9 @@ students to plan and conduct advance research experiments. </p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup9" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup10" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -381,16 +377,27 @@ students to plan and conduct advance research experiments. </p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup10" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup9" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup10" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-              <div class="col-md-2 lab-list-row-col-2">
+              <div class="col-md-12 lab-list-row-col-2">
                   <!--<a href="#" class="nounderline">! <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;" /> Lecture</a>-->
                 </div>
-              </div>
+
+</div>
+ </div>
               <div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://www.aero.iitb.ac.in/pratham/virtuallaboratory/index.php" class="sidebar-a">Satellite Modelling and Simulation</a></p>
 									 <p class="text-normal-gray-smallest"> Virtual Laboratory in 
 Satellite Modelling &amp; Simulation offers distance learning 
@@ -399,8 +406,8 @@ laboratory, students can perform experiments with the same tools that
 helped ISSP team to learn about Satellites; these are the same tools 
 that helped ISSP team to design Pratham.</p> 
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									<p class="text-normal-gray-small">IIT BOMBAY</p> 
+								<div class="col-md-3 lab-list-row-col-2">
+									<a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Bombay/"><p class="text-normal-gray-small">IIT BOMBAY</p></a> 
 								</div>
 								<!--popup-->
 <div id="popup11" class="modal-box">
@@ -413,16 +420,9 @@ that helped ISSP team to design Pratham.</p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup11" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup12" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -431,16 +431,33 @@ that helped ISSP team to design Pratham.</p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup12" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup11" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup12" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-								<div class="col-md-2 lab-list-row-col-2">
+								<div class="col-md-12 lab-list-row-col-2">
 									<!--<a href="http://textofvideo.nptel.iitm.ac.in/105107123/lec1.pdf" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;" /> Lecture</a>!-->
 								</div>
+
+</div>
+
+
+
+
+
 							</div>    
                             <div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://iitd.vlab.co.in/?sub=63" class="sidebar-a"> Bioreactor Modeling &amp; Simulation lab </a> </p>
 									<p class="text-normal-gray-smallest"> This lab includes 
 experiments in Bioreactor- Basics || Control Characteristics of pH 
@@ -449,8 +466,8 @@ fermentation || Simultaneous measurement of specific growth / death rate
  of micro organisms || Determination of Volumeteric Mass Transfer 
 Co-efficient (Dynamic method)</p> 
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									<p class="text-normal-gray-small">IIT DELHI</p> 
+								<div class="col-md-3 lab-list-row-col-2">
+									<a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Delhi/"><p class="text-normal-gray-small">IIT DELHI</p></a> 
 								</div>
 								<!--popup-->
 <div id="popup13" class="modal-box">
@@ -463,16 +480,9 @@ Co-efficient (Dynamic method)</p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup13" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup14" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -481,24 +491,40 @@ Co-efficient (Dynamic method)</p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup14" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup13" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup14" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-							     <div class="col-md-2 lab-list-row-col-2">
+							     <div class="col-md-12 lab-list-row-col-2">
 									<!--<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;" /> Lecture</a>!-->
 								</div>
+
+</div>
+
+
+
+
 							</div>
 							<div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://vlae-iitk.vlabs.ac.in/" class="sidebar-a">Aerospace Virtual laboratory</a></p>
 									 <p class="text-normal-gray-smallest"> This lab from IIT Kanpur
  Aerospace Engineering Department provides experiments in aerospace 
 engineering like Determination of Young's Modulus and Poisson's Ratio 
 and heat of combustion of aviation fuel etc. </p> 
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									 <p class="text-normal-gray-small">IIT KANPUR</p> 
+								<div class="col-md-3 lab-list-row-col-2">
+									 <a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Kanpur/"><p class="text-normal-gray-small">IIT KANPUR</p></a> 
 								</div>
 								<!--popup-->
 <div id="popup15" class="modal-box">
@@ -511,16 +537,9 @@ and heat of combustion of aviation fuel etc. </p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup15" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup16" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -529,24 +548,41 @@ and heat of combustion of aviation fuel etc. </p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup16" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup15" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup16" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-								<div class="col-md-2 lab-list-row-col-2">
+								<div class="col-md-12 lab-list-row-col-2">
 									<!--<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;" /> Lecture</a>!-->
 								</div>
+
+</div>
+
+
+
+
+
 							</div>
 							<div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://home.iitk.ac.in/%7Esangals/virtualLab/mechanicalTesting.html" class="sidebar-a">Materials - Thermal processing &amp; Microstructural Characterization</a></p>
 									 <p class="text-normal-gray-smallest"> This lab from Department
  of Materials and Metallurgical Engineering of IIT Kanpur offers 
 experiments in Analysis of Stress-Strain Curves, Yield Point Phenomenon 
 and Weibull Modulus of Brittle Materials etc.</p>
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									 <p class="text-normal-gray-small">IIT KANPUR</p> 
+								<div class="col-md-3 lab-list-row-col-2">
+									 <a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Kanpur/"><p class="text-normal-gray-small">IIT KANPUR</p></a> 
 								</div>
 								<!--popup-->
 <div id="popup17" class="modal-box">
@@ -559,16 +595,9 @@ and Weibull Modulus of Brittle Materials etc.</p>
   </div>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
-
-<div class="col-md-2 lab-list-row-col-2">
-
-<a target="_blank" data-modal-id="popup17" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
-	
-
-</div>
 <div id="popup18" class="modal-box">
   <header> <a  class="js-modal-close close">×</a>
-  <h3>Syllabus Mapping</h3>
+  <h3>Syllabus Mappingping</h3>
   </header>
   <div class="modal-body">
     <p>No syllabus in records  </p>
@@ -577,13 +606,30 @@ and Weibull Modulus of Brittle Materials etc.</p>
    <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
-<div class="col-md-2 lab-list-row-col-2">
-<a target="_blank"  data-modal-id="popup18" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Map</a>
+
+<div class="col-md-3">
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup17" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup18" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
 </div>
 <!--popup-->
-								<!--<div class="col-md-2 lab-list-row-col-2">
+								<!--<div class="col-md-12 lab-list-row-col-2">
 									<a href="#" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;" /> Lecture</a>
 								</div>-->
+
+</div>
+
+
+
+
+
 							</div>
 
 

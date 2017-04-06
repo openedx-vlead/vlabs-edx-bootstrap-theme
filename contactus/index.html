@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/owl.theme.css">
     
     <link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="files/bootstrap.css">
+    <link rel="stylesheet" href="files/font-awesome.css">
+    <link rel="stylesheet" href="files/bootsnipp.css">
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -58,73 +61,33 @@
 
 });
 </script>	
-
+<!--common start header code-->
+<script src="js/jquery.js"></script>
+	    <div id="headermerge"> </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+   $("#headermerge").load("http://vlabs.ac.in:5959/common/header/header.html");
+   });
+</script>
+<!--common header code end here-->
   </head>
 <body id="page-top" class="index" onload="generateTopLabs()">
   <div id="top">
     <header>
 	<!-- Navigation -->
-	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
-	        <div class="container-fluid">
-			            <!-- Brand and toggle get grouped for better mobile display -->
-			            <div class="navbar-header page-scroll">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			                    <span class="sr-only">Toggle navigation</span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                    <span class="icon-bar" style="background-color: #77BB41"></span>
-			                </button>
-			                <a class="navbar-brand main-logo-a" href="https://vlabs.ac.in"><img src="images/logo-new.png" class="img-responsive main-logo"></a>
-			            </div>
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
-
-			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
-			                	<li>
-			                		<form method="get" action="http://vlabs.ac.in/search-result.html">
-			                        <!--	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
-			                        	<input type="submit" value="" class="search-button" />-->
-			                        </form>
-			                	</li>
-			                </ul>
-
-			                <ul class="nav navbar-nav navbar-right menu-ul">
-			                    <li class="page-scroll menu-li ">
-			                        <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
-			                    </li>
-			                    <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a">ALL LABS</a>
-			                    </li>
-<li class="page-scroll menu-li ">
-                                                <a href="https://vlabs.ac.in/courses" class="menu-a">ALL LABS ON OPENEDX</a>
-                                            </li>
-			                    <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Delhi/" class="menu-a">PARTNERS</a>
-			                    </li><li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/contactus" class="menu-a">CONTACT</a>
-			                    </li>
-			                </ul>
-
-
-
-			            </div>
-			            <!-- /.navbar-collapse -->
-	        </div>
-	        <!-- /.container-fluid -->
-	    </nav>
+	    
 	</header>
     
-    <div id="content">
+  <!--  <div id="content">
       <div class="container-fluid">
 	<div class="row">
 	  <hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
 	</div> <!-- row end -->
-      </div> <!-- container-fluid end for slider -->
+      <!--</div> <!-- container-fluid end for slider -->
       
       
       <!-- =================================================================================================================================== -->
-      <div class="container">
+      <div class="container" style="margin-left: 35px; margin-right: 35px; padding-top:102px;">
 <!--h1 class="text-h1-lightblue" class="title" style=" margin-bottom: 20px; margin-top: 30px; text-align:center;">Communication Channels</h1-->
 <div class="col-md-12">
 <h1 style="color:#2C99CE" ><b><center> Virtual Labs Project</center></b></h1>
@@ -147,12 +110,10 @@
 </div>
 
 <div  class="col-md-6" >
-<p><b>Mailing Address : </b><p>Room No:2016/II A, <br> Bharti School of Telecom, <br>Indian Institute of Technology, Delhi, <br> Hauz Khas, New Delhi - 110016 (India)</p>
-<p><b>Engineering and Architecture Divsion : </b><p>Room No:B6-204, <br>Vindhya C6, VLEAD, IIIT-H, Gachibowli, <br>Hyderabad - 500032</p> <br><br>
+<p><b>Mailing Address : </b><p>Room No:206/II A, <br> Bharti School of Telecom, <br>Indian Institute of Technology, Delhi, <br> Hauz Khas, New Delhi - 110016 (India)</p>
+<p><b>Engineering and Architecture Division : </b><p>Room No:B6-204, <br>Vindhya C6, VLEAD, IIIT-H, Gachibowli, <br>Hyderabad - 500032</p> 
 </div>
 </div>
-
-
 
 <div class="col-md-12">
 <hr class="hrline"><br>
@@ -174,8 +135,7 @@ Labs.
 <p>#vlabs-engineers :: used by lab developers and integrators.   
 </p>
 <p>
-Usually, someone will be there to respond to the channel 10am to 5pm
-GMT+5:30.
+Channel open from 10am to 5pm GMT+5:30.
 </p>
 
 <p id="sec-1-1-1" ><b>Help with IRC Chat</b></p>
@@ -205,9 +165,8 @@ conducting communication on IRC channels.
 
 <div class="outline-text-4" id="text-1-2-1">
 
-<p>A mailing list for <a href="https://groups.google.com/a/vlabs.ac.in/forum/?hl=en#!forum/engineers">engineers</a> contributing to Virtual Labs.  This list is
-used by all the engineers who contribute to the development of Virtual
-Labs.  A concrete feature requirement could evolve out of a discussion
+<p>A mailing list, <a href="https://groups.google.com/a/vlabs.ac.in/forum/?hl=en#!forum/engineers">engineers</a>, is
+used by all the engineers who contribute to the development of Virtual Labs.  A concrete feature requirement could evolve out of a discussion
 on this mailing list. </p>
 
 <p>
@@ -224,9 +183,7 @@ on this mailing list. </p>
 
 <div class="outline-text-3" id="text-1-3">
 <p>
-This <a href="https://github.com/virtual-labs/engineers-forum/issues">forum</a> is conducted using GitHub <a href="https://guides.github.com/features/issues/">issues</a>.  Any issue faced with the
-development of Virtual Labs is logged here.  A GitHub handle is necessary to
-create an issue.  
+This <a href="https://github.com/virtual-labs/engineers-forum/issues">forum</a> is conducted using GitHub <a href="https://guides.github.com/features/issues/">issues</a>.  Any issue faced with the development of Virtual Labs is raised in this forum.  A GitHub handle is necessary to create an issue.  
 </p>
 </div>
 </div>
@@ -237,8 +194,7 @@ create an issue.
 
 <div class="outline-text-3" id="text-1-4">
 <p>
-This is the mailing list that all the announcements related to Virtual Labs
-are made. 
+All the announcements related to Virtual Labs are made in the <a href="https://groups.google.com/a/vlabs.ac.in/forum/?hl=en#!forum/announce">announce</a> mailing list. 
 </p>
 
 <p>

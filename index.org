@@ -2,15 +2,15 @@
 #+Author: VLEAD
 #+Date: [2016-10-17 Monday]
 
-
-
-
 * Introduction
 This document briefly explaines the process of customizing theme in
 openedx.
 
 
-* Comprehensive theme on dogwood3 
+* [[./requirements/index.org][Requirements]]
+
+* Installation of theme
+
   To apply comprehensive theme on dogwood follow the steps -
   + Login to edX server 
   + cd /edx/app/edxapp/themes/

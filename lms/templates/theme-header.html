@@ -25,10 +25,11 @@ from ccx.overrides import get_current_ccx
 try:
     course_id = course.id.to_deprecated_string()
 except:
-    # can't figure out a better way to get at a possibly-defined course var
+    # cant figure out a better way to get at a possibly-defined course var
     course_id = None
 site_status_msg = get_site_status_msg(course_id)
 %>
+
 % if site_status_msg:
 <div class="site-status">
   <div class="inner-wrapper">
@@ -57,21 +58,21 @@ site_status_msg = get_site_status_msg(course_id)
     </div>
 </div></.top-bar-->
 
-  <header id="global-navigation" class="global ${"slim" if course else ""} navbar navbar-inverse" >
+  <header id="global-navigation" class="global ${"slim" if course else ""} " ><!--took this class out from this line "navbar navbar-inverse"-->
     <!-- This file is only for demonstration, and is horrendous! -->
     <nav aria-label="${_('Global')}">
     <div class="col-md-1">
       <h1 class="logo pull-left" style="margin-top: 10px;">
         <a href="${marketing_link('ROOT')}">
           <%block name="navigation_logo">
-              <img src="${static.url("images/logo.png")}"  style="width:2.8em" alt=""/>
+              <!--img src="${static.url("images/logo.png")}"  style="width:2.8em" alt=""/-->
           </%block>
         </a>
       </h1>
     </div>
 
 
-    <div class="col-md-7">
+    <div class="col-md-12">
       % if course:
       <h2><span class="provider">${course.display_org_with_default | h}:</span>
         ${course.display_number_with_default | h}
@@ -114,7 +115,7 @@ site_status_msg = get_site_status_msg(course_id)
         %endif
       </div>
 
-      <div class="col-md-4 header-btns">
+      <!--<div class="col-md-4 header-btns">
         <div class="dropdown pull-right">
           <button class="btn btn-primary dropdown-toggle" style="box-shadow: unset;" type="button">${user.username}
           <span class="caret"></span></button>
@@ -144,7 +145,7 @@ site_status_msg = get_site_status_msg(course_id)
               <li class="nav-global-01">
                 <!--a class="btn btn-info btn-sm pull-left color-black" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5" style="margin-right: 5px;"></i>${_('Find Courses')}</a-->
                 <!--<a class="btn btn-info btn-sm pull-right color-black style="margin-top:20px;margin-left:9px" href="${marketing_link('COURSES')}"><i class="icon fa fa-search p-l-5"></i>${_('Find Courses')}</a>-->
-              </li>
+         <!--     </li>
             % endif
             %if settings.FEATURES.get('ENABLE_SYSADMIN_DASHBOARD','') and user.is_staff:
               <li>
@@ -178,80 +179,230 @@ site_status_msg = get_site_status_msg(course_id)
 
       % endif
       </div>
-    </nav>
-<div class="top-bar top-bar-header">
-    <div class="row">
-        <div class="col-md-12">
-          
-                
-<div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
 
-			                           <ul class="nav navbar-nav navbar-left menu-ul">
-			                   <!-- <li class="page-scroll menu-li ">
-			                        <a href="https://vlabs.ac.in" class="menu-a">HOME</a>
-			                    </li>-->
-			                   <li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="menu-a">All Labs</a>
-			                    </li>
-					<li class="page-scroll menu-li ">
-                                                <a href="https://vlabs.ac.in/courses" class="menu-a">All Labs on OpenedX</a>
-                                            </li>
-			                  <!--  <li class="page-scroll menu-li ">
-			                        <a href="https://vlabs.ac.in/search_feature/institutes/IIT-Delhi/" class="menu-a">Partners</a>
-			                    </li>-->
-<li class="page-scroll menu-li ">
-			                        <a target="_blank" href="https://plus.google.com/communities/104131148292250423165" class="menu-a">Teachers' Community</a>
-
-			                    </li>
-  
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/workshops/" class="menu-a">Workshops</a>
-			                    </li>
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="menu-a">College Cloud Edition</a>
-			                    </li>
-
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/contactus" class="menu-a">Contact</a>
-			                    </li>
-<li class="page-scroll menu-li ">
-			                        <a href="http://vlabs.ac.in:5959/faq/" class="menu-a">FAQ</a>
-			                    </li>
-
-			                </ul>
+<!--this is custom code appended -->
 
 
+   
+</nav>
+<!--DOCTYPE html>
+<!--html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script async="" src="https://vlabs.ac.in:5959/common/header/files/CVADLKQJ_002.html"></script>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    
+    
+      <title>header</title-->
+   
+    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootstrap.css">
+    <!--<link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/font-awesome.css">-->
+    <link rel="stylesheet" href="https://vlabs.ac.in:5959/common/header/files/bootsnipp.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+    <![endif]-->
 
-			            </div>
+
+    <nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation" style="z-index: 9999999">
+  <div >
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div>
+        <a class="navbar-brand main-logo-a" href="https://vlabs.ac.in" style=" width:100px; height:40px; margin-top:-13px"><img src="https://vlabs.ac.in/static/edx-bootstrap-theme/images/logo.7e034286282a.png" class="img-responsive main-logo" style="width:100%; maring-top:2px;"></a>
+      </div>
+    </div>
+<!--<script src="files/BSAcpc.js" async=""></script>-->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-2" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-left">
+        <!--<li class="visible-xs">
+          <form action="http://bootsnipp.com/search" method="GET" role="search">
+            <div class="input-group">
+              <input class="form-control" name="q" placeholder="Enter Discipline Name" type="text">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                <button class="btn btn-danger" type="reset"><span class="glyphicon glyphicon-remove"></span></button>
+              </span>
+            </div>
+          </form>
+        </li>-->
+
+        <li class="">
+          <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false">Labs <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+
+            <li class=""><a href="http://vlabs.ac.in:5959/search_feature/disciplines/ElectronicsAndCommunications/index.html" class="">All Labs (Domain Wise)</a></li>
+<li class=""><a href="http://vlabs.ac.in:5959/search_feature/institutes/IIT-Delhi/index.html" class="">All Labs (Institute Wise)</a></li>
+            <li class=""><a href="https://vlabs.ac.in/courses" class="">All Labs on Open edX </a></li>
+
+
+          </ul>
+        </li>
+
+
+
+<li class="">
+          <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false">Community <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+
+            <li class=""><a href="https://plus.google.com/communities/104131148292250423165" class="" target="_blank">Teachers </a></li>
+            <li class=""><a href="https://groups.google.com/a/vlabs.ac.in/forum/#!forum/engineers" class="" target="_blank">Developers </a></li>
+	    <li class=""><a href="https://groups.google.com/a/vlabs.ac.in/forum/#!forum/users" class="" target="_blank">Students </a></li>
+
+
+          </ul>
+        </li>
+
+<li class="">
+          <a href="" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false" target="_blank">Development<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+
+            <li class=""><a href="http://dev.vlabs.ac.in/" class="">Virtual Labs Development </a></li>
+           
+
+
+          </ul>
+        </li>
+
+<li class="">
+          <a href="http://vlabs.ac.in:5959/workshops/" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false">Workshops<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+
+            <li class=""><a href="http://vlabs.ac.in:5959/workshops/" class="">Online</a></li>
+           <li class=""><a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="">College Cloud Edition </a></li>
+
+          </ul>
+        </li>
+
+
+
+<li class="">
+          <a href="" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false" s>FAQ<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+	    <li class=""><a href="http://vlabs.ac.in:5959/faq/index.html" class="">Virtual Labs </a></li>
+            <li class=""><a href="http://vlabs.ac.in:5959/faq/index.html" class="">Virtual Labs College Cloud Edition  </a></li>
+            <li class=""><a href="http://vlabs.ac.in:5959/faq/index.html" class="">Expression of Interest For Workshops </a></li>
+           
+
+
+          </ul>
+        </li>
+<li class="">
+          <a href="" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false" s>Information<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+	    <li class=""><a href="http://vlabs.ac.in:5959/announcements/index.html" class="">Announcements</a></li>
+            <li class=""><a href="http://vlabs.ac.in:5959/contactus" class="">Contact us  </a></li>
+           
+           
+
+
+          </ul>
+        </li>
+
+        
+
+<!--<li class="hidden-xs"><a href="#toggle-search" class=""  style="padding-right:225px;">Search <img src ="images/bsearch.png" style="width:23px"></a></li>-->
+<li>
+							<i class="search fa search-btn fa-"></i>
+							  <!--<div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                    <label for="filter">Filter by</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>All Snippets</option>
+                                        <option value="1">Featured</option>
+                                        <option value="2">Most popular</option>
+                                        <option value="3">Top rated</option>
+                                        <option value="4">Most commented</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Author</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Contains the words</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                 <!-- <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>-->
+						</li>
+   <li class=""><a href="https://vlabs.ac.in/register" class="">Register</a></li>
+
+<li class="">
+          <a href="" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false" s>Login<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+
+         
+
+<li class=""><a href="https://vlabs.ac.in/login" class="">Sign in  </a></li>
+<li class=""><a href="https://vlabs.ac.in/account/settings" class="">Account Settings</a></li>
+<li class=""><a href="https://vlabs.ac.in/logout" class="">Sign Out </a></li>
+
+          </ul>
+        </li>
+
+<!--<li class=""><a href="https://vlabs.ac.in/register" class="">Register</a></li>
+<li id="nav-login-btn" class=""><a href="https://vlabs.ac.in/login" class="">Sign in</a></li>
+<li id="nav-login-btn" class=""><a href="https://vlabs.ac.in/login" class="">Sign out</a></li>-->
+        
+      <!-- <li class="hidden-xs"><a href="#toggle-search" class="">Search <img src ="images/bsearch.png" style="width:23px"></a></li>-->
+<!--<li class="hidden-xs"><a href="#toggle-search" class=""><span class="glyphicon glyphicon-search"></span></a></li>-->
+      </ul>
+
+
+       <!-- <div class="nav navbar-nav navbar-right" > <li class=""><a href="" class="">Register</a></li>
+          <li id="nav-login-btn" class=""><a href="" class="">Sign in</a></li>
+        
+        <li class="hidden-xs"><a href="#toggle-search" class="">Search <img src ="images/search.png" style="width:30px"></a></li>
+<!--<li class="hidden-xs"><a href="#toggle-search" class=""><span class="glyphicon glyphicon-search"></span></a></li>-->
+      <!--</ul></div>  -->       
+    </div>
+  </div>
+
+
+
+  <!--search start from here-->
+
+<!--<div class="bootsnipp-search " style="width:50%; left:606px">
+    <div class="">
+      <form action="http://vlabs.ac.in" method="GET" role="search">
+        <div class="input-group">
+          <input class="form-control" name="q" placeholder="Enter lab name" type="text">
+	  <span class="input-group-btn">
+            <button class="btn btn-primary" type="reset"><img src="images/wsearch.png" style="width:23px"></button>
+          </span>
+ <input class="form-control" name="q" placeholder="Enter Board Area" type="text">
+	  <span class="input-group-btn">
+            <button class="btn btn-primary" type="reset"><img src="images/wsearch.png" style="width:23px"></button>
+          </span>
+
 
         </div>
+      </form>
     </div>
-</div>
-
-<!--<ul>
-  
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Labs</a>
-    <div class="dropdown-content">
-      <a href="#">All Labs</a>
-      <a href="#">All Labs on OpenedX</a>
-     
-    </div>
-  </li>
-<li class="dropdown">
-    <a href="#" class="dropbtn">Community</a>
-    <div class="dropdown-content">
-      <a href="#">Teachers</a>
-      <a href="#">Developers</a>
-      
-    </div>
-  </li>
-<li><a href="http://vlabs.ac.in:5959/contactus" class="dropbtn">Contact us</a></li>
-  <li><a href="http://vlabs.ac.in:5959/workshops/" class="dropbtn">Workshops</a></li>
-  <li><a href="http://vlabs.ac.in:5959/college-cloud-edition/" class="dropbtn">College Edition</a></li>
-<li><a href="https://vlabs.ac.in/search_feature/institutes/IIT-Delhi/" class="dropbtn">Partners</a></li>
-</ul>-->
-
+  </div>-->
+<!--search end from here-->
 </header>
 
 
@@ -266,93 +417,98 @@ site_status_msg = get_site_status_msg(course_id)
 %endif
 
 <%include file="help_modal.html"/>
-<!--<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-   /* background-color: #404040;*/
+           
+
+   <!-- <script src="http://vlabs.ac.in:5959/common/header/files/jquery-1.js"></script>
+    <script src="http://vlabs.ac.in:5959/common/header/files/bootstrap.js"></script>-->
+    <script src="https://vlabs.ac.in:5959/common/header/files/scripts.js"></script>
+   <!-- <script async="" src="files/adsbygoogle.html"></script>-->
+   
+  <style>#search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
 }
 
-li {
+.search {
+    padding: 5px 0;
+    width: 157px;
+    height: 30px;
+    position: relative;
+   
     float: left;
+    line-height: 22px;
 }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:1px;
+    }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
 
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
+.btn {
+    height: 30px;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>-->
-
-
-
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /*background-color: #404040;}*/
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #2C99CE;
-    text-align: center;
-    /*padding: 14px 16px;*/
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #DBDBDB;
-}
-
-.active {
-    background-color: #4CAF50;
+    right: 0;
+    top: 5px;
+    border-radius:1px;
 }
 </style>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.dropdown-menu > li>a:not(a[href="#"])').on('click', function() {
-      self.location = $(this).attr('href');
-    });
-  });
-</script>
+
+<style>
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}</style>
+
+</body></html>
