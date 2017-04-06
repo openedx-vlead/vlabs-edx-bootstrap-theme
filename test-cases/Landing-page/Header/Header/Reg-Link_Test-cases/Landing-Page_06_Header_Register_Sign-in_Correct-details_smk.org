@@ -1,0 +1,43 @@
+#+Title: Test case
+#+Date: 06 April 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + To check the Functionality of the Sign in button in the registration page.
+     
+* Pre conditions
+
+  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_Landing-Page_01_Usability]]
+
+
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  Existing User:
+       + Click on Sign In button.
+  +  Sign In page:
+       + The user should give his/her credentials:
+	 1. Email
+	 2. Password
+  
+* Expected result
+
+  +  On click, Sign in button the link should be navigating to new
+     page where the user can be able to fill the credentials to access
+     open edx.   
+ 
+* Review/comments
+
+* Pass/Fail

@@ -24,17 +24,15 @@
      
 * Test Steps
 
-  + Refer to the test case 
-  + Click on "Create your Account" button with out clicking on
-    "Acceptance of agreement" button. 
+  + Refer to the test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Reg-Link_Test-cases/Landing-Page_01_Header_Register_smk.org][Landing-Page_01_Header_Register_smk.org]]
+  + Click on "Create your Account" button after clicking on
+    "Acceptance of agreement" UI button. 
   
 * Expected result
 
-  + With out selecting the UI button for "Acceptance of agreement" the
-    user should not be able to create account. 
-
-  + An error message should be appeared when the user clicks on
-    "Create your Account" button with out selecting the  UI button for
-    "Acceptance of agreement". 
-     
+  + The user should be able to register to the open edx
+    successfully. And should redirect to the appropriate page. 
+   
 * Review/comments
+
+* Pass/Fail
