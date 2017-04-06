@@ -20,7 +20,7 @@
   + Changed all FAQ questions in to Italic 
 * Milestone link
   https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/4
- 
+  https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/5
 
 * Documentation
   https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/index.org 
