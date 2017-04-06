@@ -1,5 +1,5 @@
 #+Title: Test case
-#+Date: 04 April 2017
+#+Date: 06 April 2017
 #+Author: SravanthiB
 
 * Environment
@@ -12,8 +12,7 @@
 
 * Objective
 
-  + The Functionality of the "Workshop" menu in the Header section should
-    be appropriate. 
+  + To check the Functionality of the Log in button in the Header section. 
      
 * Pre conditions
 
@@ -26,16 +25,16 @@
 * Test Steps
 
   +  Open the landing page of Open Edx.
-  +  Click on the "Workshops" Menu from Header section. 
-  +  Click on the "Online" link.
-  +  Check whether the link is navigating to "[[https://vlabs.ac.in:5959/workshops][Online]]"page or not.
-  +  Check the functionality of the link. 
-  +  Check whether the link is assigned properly and is not broken.
-
+  +  Click on the "Log in" button from Header section to check the
+     functionality. 
  
 * Expected result
 
-  +  The link should be navigated to "[[https://vlabs.ac.in:5959/workshops][Online]]" page.
+  + A drop down with the menu Items should be displayed on click. 
+  + Should have the following menu items:
+    1) Sign in
+    2) Account Settings
+    3) Sign Out   
 
 * Review/comments
 

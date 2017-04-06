@@ -1,0 +1,49 @@
+#+Title: Test case
+#+Date: 06 April 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + To check the Functionality of the Banner with Images on Slider. 
+     
+* Pre conditions
+
+  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_smk.org]]
+  
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  Open the landing page of Open Edx.
+  +  Check the functionality of the slide show
+  +  Click on the buttons given to change the images on slider.
+  +  Click on the next/Previous buttons to change the slide.
+ 
+* Expected result
+
+  +  The Banner should be displayed on the landing page with images on
+     the slider. 
+  +  The slide show should work appropriately
+  +  On click, the Next/Previous buttons the slides should change
+     accordingly. 
+  +  The slider should have the following images giving the
+     information about all the Virtual labs.
+	1. Banner
+	2. About Us|Virtual Labs 
+	3. About Us|Objective
+	4. About Us|Philosophy
+	5. About Us|Key Features    
+
+* Review/comments
+
+* Pass/Fail
