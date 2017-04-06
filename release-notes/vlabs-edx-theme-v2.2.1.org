@@ -1,0 +1,28 @@
+#+TITLE: VLABS Open edX Theme v2.2.1
+#+AUTHOR: VLEAD Systems
+#+DATE: [2017-04-05]
+
+* Introduction
+  This document describes the release notes of =VLABS Open edX Theme=
+  version =v2.2.1=. This was a minor release with quick bug fixes.
+
+
+* Bug fixes, changes and new features
+
+  + Page header for all labs.
+  + Link fixed for menu item of Workshops menu.
+  + =Past workshops= link fixed.
+  + Coloured logos of participating institutes on all pages.
+  + Added announcement form link on announcement page.
+  + Updated all the broken links on announcements page (reference from
+    vlab.co.in) 
+  + Changed FAQ Title section text color and background color.
+  + Changed all FAQ questions in to Italic 
+* Milestone link
+  https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/4
+  https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/5
+
+* Documentation
+  https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/index.org 
+
+

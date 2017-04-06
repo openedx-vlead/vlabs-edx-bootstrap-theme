@@ -718,6 +718,12 @@ padding-top: 67px;
 left: 96px;
 }
 
+.panel-default > .panel-heading{
+color: #fff;
+background-color: #2C99CE !important;
+border-color: #ddd;
+}
+
 .handpointer{cursor: pointer;
 text-decoration: none !important;
 }
