@@ -1,0 +1,45 @@
+#+Title: Test case
+#+Date: 07 April 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + To check the Functionality of Usage slot in the Analytics division. 
+     
+* Pre conditions
+
+  1. Refer the first test case [[https://analytics-api.vlabs.ac.in/api/totalusage][Landing-Page_01_Usability_smk.org]]
+  
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  Open the landing page of Open Edx.
+  +  Check whether the usage count is displayed on the landing page or not.
+  +  Check whether the count is dynamically fetched from analytics server or not.
+  +  Check whether the link is navigating to the [[https://analytics-api.vlabs.ac.in/api/totalusage][Analytics]] page or not
+     where the usage count is displayed.
+
+* Expected result
+
+  +  The usage count should be displayed on the landing page. 
+  +  The link should navigate to [[http://vlabs.ac.in:5959/analytics/analytics/usage.html][Analytics]] page where the usage details are
+     displayed.
+  +  The usage count should be dynamically fetched from the analytics
+     server.
+
+* Review/comments
+
+* Pass/Fail
+  
+    Fail 
