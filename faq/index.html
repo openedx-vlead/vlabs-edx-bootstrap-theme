@@ -69,6 +69,8 @@
 
 
 
+
+
 <div id="vlabs" class="tabcontent">
   <!--<span onclick="this.parentElement.style.display='none'" class="topright">x</span>-->
 <div class="panel panel-default">
@@ -82,7 +84,7 @@
 					
 <div class="panel-group" id="accordion">
 					<div class="panel faqpanel">
-						<div class="well fawell" data-toggle="collapse" data-target="#1" data-parent="#accordion"> <i>Q1. What are Virtual Labs?</i> <i class="glyphicon glyphicon-menu-up pull-right"></i></div>
+						<div class="well fawell" data-toggle="collapse" data-target="#1" data-parent="#accordion"> <i>Q1. What are Virtual Labs?</i> <i class="glyphicon pull-right glyphicon-menu-up "></i></div>
 							<ul id="1" class="panel-collapse collapse in fadata">
 								<p> Virtual Labs are intended to augment the learning of science and engineering subjects through performing experiments. The experiments are designed either as simulations or as remote triggered. A remote triggered lab allows a user to connect to real equipment using a web browser. There are currently around 150 and labs and 1500 experiments at various stages of development and deployment. They are currently hosted at vlabs.ac.in.
 
@@ -943,6 +945,38 @@ function openbutton(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>	
+
+<style>
+/**********css for faq*********/
+.faqinfowell {
+    text-align: center;
+    font-size: 20px;
+    background: rgb(127, 8, 4) !important;
+    color:#FFF !important;
+    font-weight: bold;  
+	cursor: default;
+}
+.fawell{
+	cursor:pointer;
+	font-weight: 500;
+    font-style: italic;
+}
+.faqpanel{
+	border: 0px;
+}
+.fadata{
+	text-align:justify;
+	line-height: 1.5;
+}
+</style>
+
+<script>
+	$('.collapse').on('shown.bs.collapse', function(){
+		$(this).parent().find(".glyphicon-menu-down").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-up");
+	}).on('hidden.bs.collapse', function(){
+		$(this).parent().find(".glyphicon-menu-up").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
+	});
+</script>
 
 
 </body></html>
