@@ -13,7 +13,16 @@
 - Link for the [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/tree/master/test-cases/Landing-page/Header/Header][Test-Cases]] written for landing page of Open Edx
 - The test cases have been created in different folders according to
   the menu list.
-- Following are the 
+- Following are the folder that contains division/slot wise test cases
+** Header
+   In this folder test cases for the menu and its items in the header section have been written.
+*** Lab Menu Test-cases:
+   In this folder the following scenarios have been covered.
+-  Link 1
+-  Link 2
+-  Link 3 functionality have been covered.
+*** Community Menu test-cases :
+
 
  
 
