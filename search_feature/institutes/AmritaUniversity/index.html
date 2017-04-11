@@ -136,7 +136,7 @@
 
 
 <div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-5">
+								<div class="col-md-8">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://vlabs.ac.in/courses/course-v1:Amrita-University+CBI-AU+Anytime/about" class="sidebar-a"><span style="font-size: 30px; color:red;">*</span>Cell Biology Virtual Lab I</a></p>
 									<p class="text-normal-gray-smallest"> Cell biology is an exciting and dynamic area that helps discover the fascinating world of cells. It includes the study of the structure and organization, growth, regulation, movements and interaction of the cells. Cell biology is closely related to other areas of biology such as genetics, molecular biology, and biochemistry.</p>
 								</div>
@@ -153,20 +153,76 @@
 
 
 <div style="margin-top: 20px; " class="lab-list-row-div">
-								<div class="col-md-5">
+								<div class="col-md-8">
 									<p class="text-h3-darkblue"><a target="_blank" href="http://vlabs.ac.in/courses/course-v1:Amrita-University+CBII-AU+Anytime/about" class="sidebar-a"><span style="font-size: 30px; color:red;">*</span>Cell Biology Virtual Lab II</a></p>
 									<p class="text-normal-gray-smallest"> Cell biology is an exciting and dynamic area that helps discover the fascinating world of cells. It includes the study of the structure and organization, growth, regulation, movements and interaction of the cells. Cell biology is closely related to other areas of biology such as genetics, molecular biology, and biochemistry.</p>
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
+								<div class="col-md-4 lab-list-row-col-2">
 									<!--<p class="text-normal-gray-small">IIT KHARAGPUR</p>-->
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									<a target="_blank" href="http://vlabs.ac.in/courses/course-v1:Amrita-University+CBII-AU+Anytime/about" class="nounderline"> <img src="images/flask.png" style="width: 20px;   vertical-align: text-bottom;"> LAB</a>
+
+
+
+<!--new div start here-->
+<!--popup-->	
+<div id="popup1" class="modal-box">
+  <header> <a  class="js-modal-close close">×</a>
+  <h3>Reference Books</h3>
+  </header>
+  <div class="modal-body">
+    <p>No books in records  </p>
+	
+  </div>
+   <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
+</div>		
+<div id="popup2" class="modal-box">
+  <header> <a  class="js-modal-close close">×</a>
+  <h3>Syllabus Mapping</h3>
+  </header>
+  <div class="modal-body">
+    <p>No syllabus in records  </p>
+	
+  </div>
+   <footer> <a  class="btn btn-small js-modal-close">Close</a> </footer>
+</div>					
+<div class="col-md-3"> 
+
+
+<div class="col-md-12 lab-list-row-col-2">
+
+<a target="_blank" data-modal-id="popup1" class="nounderline"> <img src="images/refbook.png" style="width: 15px;   vertical-align: text-bottom;"> Reference Books</a>
+	
+
+</div>
+
+
+<div class="col-6 col-md-12 lab-list-row-col-2">
+<a target="_blank"  data-modal-id="popup2" class="nounderline"> <img src="images/syllabus.png" style="width: 15px;   vertical-align: text-bottom;"> Syllabus Mapping</a>
+</div>
+<!--popup-->
+								<div class=" col-md-12 lab-list-row-col-2">
+									<a target="_blank" href="http://nptel.ac.in/courses/102103012/" class="nounderline"> <img src="images/chat.png" style="width: 15px;   vertical-align: text-bottom;"> NPTEL Lecture</a>
 								</div>
-								<div class="col-md-2 lab-list-row-col-2">
-									<a target="_blank" href="http://nptel.ac.in/courses/102103012/" class="nounderline"> <img src="images/chat.png" style="width: 20px;   vertical-align: text-bottom;"> LECTURE</a>
-								</div>
+
+
 							</div>
+
+</div> <!--new div end here-->
+
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div style="margin-top: 20px; " class="lab-list-row-div">
@@ -1077,5 +1133,40 @@ Triggered Lab is an experimental wireless sensor network deployed partly
 		}
 	</script>	
 -->	
+
+
+<!--POPUP-->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$(function(){
+var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+	$('a[data-modal-id]').click(function(e) {
+		e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+		var modalBox = $(this).attr('data-modal-id');
+		$('#'+modalBox).fadeIn($(this).data());
+	});  
+  
+  
+$(".js-modal-close, .modal-overlay").click(function() {
+    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+        $(".modal-overlay").remove();
+    });
+ 
+});
+ 
+$(window).resize(function() {
+    $(".modal-box").css({
+        //top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+    });
+});
+ 
+$(window).resize();
+ 
+});
+</script>
 
 </body><!-- jQuery --></html>
