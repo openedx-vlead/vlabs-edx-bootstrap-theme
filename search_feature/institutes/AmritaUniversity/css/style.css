@@ -1045,7 +1045,7 @@ h3 { font-size: 1.3em; }
 .modal-box .modal-header h3,
 .modal-box .modal-header h4 { margin: 0; }
 
-.modal-box .modal-body { padding: 2em 1.5em; }
+.modal-box .modal-body { padding: 4em 1.5em; }
 
 .modal-box footer,
 .modal-box .modal-footer {
