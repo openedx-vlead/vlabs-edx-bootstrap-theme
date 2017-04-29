@@ -1,0 +1,38 @@
+#+Title: Test case
+#+Date: 06 April 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + To check the Functionality of the Information button in the Header section. 
+     
+* Pre conditions
+
+  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_smk.org]]
+  
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  Open the landing page of Open Edx.
+  +  Click on the "Information" button from Header section to check the
+     functionality. 
+ 
+* Expected result
+
+  +  A drop down with the menu Items should be displayed on click. 
+  +  Should list the following menu items:
+	1. Announcements
+	2. Contact us 
+
+* Review/comments
