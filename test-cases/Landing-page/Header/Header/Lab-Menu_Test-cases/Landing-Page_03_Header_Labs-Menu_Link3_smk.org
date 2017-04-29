@@ -1,0 +1,41 @@
+#+Title: Test case
+#+Date: 04 April 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + The Functionality of the Lab's menu in the Header section should
+    be appropriate. 
+     
+* Pre conditions
+
+  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_smk.org]]
+  
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  Open the landing page of Open Edx.
+  +  Click on the "Lab" Menu from Header section. 
+  +  Click on the "All Labs on Open edx" link.
+  +  Check whether the link is navigating to "[[https://vlabs.ac.in/courses/][Labs on Open Edx]]" page
+     or not
+  +  Check the functionality of the links. 
+  +  Check whether the links are assigned properly and not broken.
+
+ 
+* Expected result
+
+  +  The link should be navigating to "[[https://vlabs.ac.in/courses/][Labs on Open Edx]]" page.
+
+* Review/comments

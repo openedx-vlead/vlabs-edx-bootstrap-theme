@@ -1,0 +1,38 @@
+#+Title: Test case
+#+Date: 05 April 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  + To check the Functionality of the UI buttons in the registration page.
+     
+* Pre conditions
+
+  1. Refer the first test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Landing-Page_01_Usability_smk.org][Landing-Page_01_Usability_smk.org]]
+  
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  + Refer to the test case [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/test-cases/Landing-page/Header/Header/Reg-Link_Test-cases/Landing-Page_01_Header_Register_smk.org][Landing-Page_01_Header_Register_smk.org]]
+  + Click on "Create your Account" button after clicking on
+    "Acceptance of agreement" UI button. 
+  
+* Expected result
+
+  + The user should be able to register to the open edx
+    successfully. And should redirect to the appropriate page. 
+   
+* Review/comments
+
+* Pass/Fail
