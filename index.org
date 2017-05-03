@@ -40,7 +40,7 @@ openedx.
 
 
 
-* Process to make a release ?
+* Process to make a release
 ** Configuring the instance 
   + Create an AMI from the existing production instance of
     https://vlabs.ac.in .
