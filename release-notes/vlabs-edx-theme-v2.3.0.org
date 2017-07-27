@@ -1,0 +1,20 @@
+#+TITLE: VLABS Open edX Theme v2.3.0
+#+AUTHOR: VLEAD
+#+DATE: [2017-07-27]
+
+* Introduction
+  This document describes the release notes of =VLABS Open edX Theme=
+  version =v2.3.0=.
+
+
+* Features 
+  Theme currently applied on VLABS Open edx (vlabs.ac.in and
+  open-edx.vlabs.ac.in) contains the following features -
+  + 2017-summer-internship section added in custom info.vlabs.ac.in pages
+  + Added drop down 2017-summer-internship in the VLABS Open edX theme header.
+  + Updated IIIT-H labs indicated with "*" mark, which are ported on Open edX platform according to the discipline and Institute wise labs. 
+
+* Documentation
+  https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/index.org 
+
+
