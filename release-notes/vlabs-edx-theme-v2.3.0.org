@@ -14,6 +14,9 @@
   + Added drop down 2017-summer-internship in the VLABS Open edX theme header.
   + Updated IIIT-H labs indicated with "*" mark, which are ported on Open edX platform according to the discipline and Institute wise labs. 
 
+* Milestone link
+  [[https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/milestone/6]]
+
 * Documentation
   https://github.com/openedx-vlead/vlabs-edx-bootstrap-theme/blob/master/index.org 
 
