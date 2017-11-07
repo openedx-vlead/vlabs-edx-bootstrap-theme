@@ -33,9 +33,11 @@ color:#2c99ce;
 }
 
 h1{
-  font-size: 36px;
+  font-size: 35px !important;
   /*color:#fff;*/
   color:Black;
+margin-top: 13px !important;
+margin-bottom: 10px;
 }
 
 h2{
@@ -423,7 +425,7 @@ padding-top:47px;
 
 #main-slider .carousel .carousel-content {
 /*  margin-top: 150px;*/
-  margin-top: 96px;
+  margin-top: 29px;
   margin-left: 11px;
 }
 
